@@ -6,16 +6,25 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        br {
+            margin-bottom: 1em;
+        }
         li.CheckListItem {
             list-style-type: none;
             margin-left: -1.4em;
+        }
+        h3.MissionCategory {
+            margin-top: 0.5em;
+            margin-bottom: 0.2em;
+        }
+        h4.MissionReward {
+            margin-top: 0.1em;
+            margin-bottom: 0.1em;
         }
     </style>
 </head>
 <body>
     <h1><a id="ChecklistHome">100% Checklist - GTA III</a></h1>
-    <br />
     <h2>Required for 100%</h2>
     <ul>
         <li>
@@ -215,7 +224,7 @@
         </li>
     </ul>
     <br />
-    <h3><a id="StoryMissionsChecklist">Story Missions</a></h3>
+    <h3 class="MissionCategory"><a id="StoryMissionsChecklist">Story Missions</a></h3>
     <ul>
         <li>
             <div>
@@ -243,7 +252,11 @@
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
     <br />
-    <h3><a id="VehicleMissionsVigilante">Vigilante Missions</a></h3>
+    <h3 class="MissionCategory"><a id="VehicleMissionsVigilante">Vigilante Missions</a></h3>
+    <div>
+        <h4 class="MissionReward">Reward</h4>
+        <span>Up to 6 Police Bribes at your Safehouse</span>
+    </div>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kMissionsVehicleVigilanteBribe1" name="kMissionsVehicleVigilanteBribe1" value="MissionsVehicleVigilanteBribe1">
@@ -270,7 +283,11 @@
             <label for="kMissionsVehicleVigilanteBribe6">Bribe #6 - Shoreside Vale +10 Threats Eliminated</label>
         </li>
     </ul>
-    <h3><a id="VehicleMissionsFirefighter">Firefighter Missions</a></h3>
+    <h3 class="MissionCategory"><a id="VehicleMissionsFirefighter">Firefighter Missions</a></h3>
+    <div>
+        <h4 class="MissionReward">Reward</h4>
+        <span>Fireproof Character Feature</span>
+    </div>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kMissionsVehicleFireFighterPortlandIsland" name="kMissionsVehicleFireFighterPortlandIsland" value="MissionsVehicleFireFighterPortlandIsland">
@@ -287,7 +304,7 @@
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
     <br />
-    <h3><a id="EmergencyVehicleCraneChecklist">Emergency Vehicle Crane Checklist</a></h3>
+    <h3 class="MissionCategory"><a id="EmergencyVehicleCraneChecklist">Emergency Vehicle Crane Checklist</a></h3>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kEmergencyVehicleCraneAmbulance" name="kEmergencyVehicleCraneAmbulance" value="EmergencyVehicleCraneAmbulance">
@@ -320,7 +337,7 @@
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
     <br />
-    <h3><a id="VehicleImportPortlandGarageChecklist">Portland Garage Import/Export Checklist</a></h3>
+    <h3 class="MissionCategory"><a id="VehicleImportPortlandGarageChecklist">Portland Garage Import/Export Checklist</a></h3>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kVehicleImportPortlandGarageBlista" name="kVehicleImportPortlandGarageBlista" value="VehicleImportPortlandGarageBlista">
@@ -389,7 +406,7 @@
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
     <br />
-    <h3><a id="VehicleImportShoresideGarageChecklist">Shoreside Vale Garage Import/Export Checklist</a></h3>
+    <h3 class="MissionCategory"><a id="VehicleImportShoresideGarageChecklist">Shoreside Vale Garage Import/Export Checklist</a></h3>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kVehicleImportShoresideGarageBanshee" name="kVehicleImportShoresideGarageBanshee" value="VehicleImportShoresideGarageBanshee">
