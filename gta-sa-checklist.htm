@@ -71,10 +71,37 @@
             <input type="checkbox" id="kCollectibles" name="kCollectibles" value="Collectibles">
             <label for="kCollectibles"><a href="#Collectibles">Collectibles</a></label>
         </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kPropertyPurchases" name="kPropertyPurchases" value="PropertyPurchases">
+            <label for="kPropertyPurchases"><a href="#PropertyPurchases">Property Purchases</a></label>
+        </li>
     </ul>
     <h2>Extra for 110%</h2>
     <ul>
-        <li></li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsOther" name="kMissionsOther" value="MissionsOther">
+            <label for="kMissionsOther"><a href="#MissionsOther">Other Missions/Objectives</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kOtherCollectibles" name="kOtherCollectibles" value="OtherCollectibles">
+            <label for="kOtherCollectibles"><a href="#OtherCollectibles">Other Collectibles</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kOtherPurchases" name="kOtherPurchases" value="OtherPurchases">
+            <label for="kOtherPurchases"><a href="#OtherPurchases">Other Purchases</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kSports" name="kSports" value="Sports">
+            <label for="kSports"><a href="#Sports">Sports</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMinigames" name="kMinigames" value="Minigames">
+            <label for="kMinigames"><a href="#Minigames">Minigames</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kStats" name="kStats" value="Stats">
+            <label for="kStats"><a href="#Stats">Stats</a></label>
+        </li>
     </ul>
     <br />
     <hr />
@@ -135,42 +162,73 @@
         </li>
         <li>
             <div>
-                <a>Vehicle Missions</a>
+                <a id="MissionsVehicle">Vehicle Missions</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehicleParamedic" name="kMissionsVehicleParamedic" value="MissionsVehicleParamedic">
+                        <label for="kMissionsVehicleParamedic"><a href="#MissionsVehicleParamedic">Paramedic</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehicleVigilante" name="kMissionsVehicleVigilante" value="MissionsVehicleVigilante">
+                        <label for="kMissionsVehicleVigilante"><a href="#MissionsVehicleVigilante">Vigilante</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehicleFirefighter" name="kMissionsVehicleFirefighter" value="MissionsVehicleFirefighter">
+                        <label for="kMissionsVehicleFirefighter"><a href="#MissionsVehicleFirefighter">Firefighter</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehicleTaxi" name="kMissionsVehicleTaxi" value="MissionsVehicleTaxi">
+                        <label for="kMissionsVehicleTaxi"><a href="#MissionsVehicleTaxi">Taxi</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehiclePimping" name="kMissionsVehiclePimping" value="MissionsVehiclePimping">
+                        <label for="kMissionsVehiclePimping"><a href="#MissionsVehiclePimping">Pimping</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsVehicleTrain" name="kMissionsVehicleTrain" value="MissionsVehicleTrain">
+                        <label for="kMissionsVehicleTrain"><a href="#MissionsVehicleTrain">Freight Train</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
-                <a>Vehicle Challenges</a>
+                <a id="ChallengesVehicle">Vehicle Challenges</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Vehicle Imports/Exports</a>
+                <a id="CollectiblesVehicle">Vehicle Imports/Exports</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Weapon Challenges</a>
+                <a id="ChallengesWeapon">Weapon Challenges</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Schools</a>
+                <a id="Schools">Schools</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Stadium Events</a>
+                <a id="StadiumEvents">Stadium Events</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Race Tournaments</a>
+                <a id="RaceTournaments">Race Tournaments</a>
             </div>
         </li>
         <li>
             <div>
-                <a>Collectibles</a>
+                <a id="Collectibles">Collectibles</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a id="PropertyPurchases">Property Purchases</a>
             </div>
         </li>
     </ul>
@@ -556,7 +614,7 @@
     <br />
     <hr />
     <h2>Vehicle Missions</h2>
-    <h3 class="MissionCategory"><a id="VehicleMissionsParamedic">Paramedic Mission</a></h3>
+    <h3 class="MissionCategory"><a id="MissionsVehicleParamedic">Paramedic Mission</a></h3>
     <div>
         <h4 class="MissionReward">Reward</h4>
         <span>Health Bonus - Maximum Level</span>
@@ -583,7 +641,7 @@
         <a href="#ChecklistHome">Back to Top</a>
     </div>
     <br />
-    <h3 class="MissionCategory"><a id="VehicleMissionsVigilante">Vigilante Mission</a></h3>
+    <h3 class="MissionCategory"><a id="MissionsVehicleVigilante">Vigilante Mission</a></h3>
     <div>
         <h4 class="MissionReward">Reward</h4>
         <span>Armor Bonus - Maximum Level</span>
@@ -610,7 +668,7 @@
         <a href="#ChecklistHome">Back to Top</a>
     </div>
     <br />
-    <h3 class="MissionCategory"><a id="VehicleMissionsFirefighter">Firefighter Mission</a></h3>
+    <h3 class="MissionCategory"><a id="MissionsVehicleFirefighter">Firefighter Mission</a></h3>
     <div>
         <h4 class="MissionReward">Reward</h4>
         <span>Fireproof Character Feature</span>
