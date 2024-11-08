@@ -6,15 +6,29 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        br {
+            margin-bottom: 1em;
+        }
+
         li.CheckListItem {
-            list-style-type: none; 
+            list-style-type: none;
             margin-left: -1.4em;
+        }
+
+        h3.MissionCategory {
+            margin-top: 0.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h4.MissionReward {
+            margin-top: 0.1em;
+            margin-bottom: 0.1em;
         }
     </style>
 </head>
 <body>
-    <h1>100% Checklist - GTA San Andreas</h1>
-    <br />
+    <h1 id="ChecklistHome">100% Checklist - GTA San Andreas</h1>
     <h2>Required for 100%</h2>
     <ul>
         <li>
@@ -74,7 +88,7 @@
                 <ul>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kMissionsAssetCourier" name="kMissionsAssetCourier" value="MissionsAssetCourier">
-                        <label for="kMissionsAssetCourier">Courier</label>
+                        <label for="kMissionsAssetCourier"><a href="#MissionsAssetCourier">Courier</a></label>
                     </li>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kMissionsAssetValet" name="kMissionsAssetValet" value="MissionsAssetValet">
@@ -120,6 +134,7 @@
         <li></li>
     </ul>
     <br />
+    <hr />
     <div>
         <h3>Story Missions</h3>
         <ul>
@@ -310,11 +325,12 @@
                 </div>
             </li>
         </ul>
+        <a href="#ChecklistHome">Back to Top</a>
     </div>
     <br />
     <hr />
     <div>
-        <h3>Courier Missions</h3>
+        <h3><a id="MissionsAssetCourier">Courier Missions</a></h3>
         <ul>
             <li class="CheckListItem">
                 <input type="checkbox" id="kMissionsCourierFoodMart" name="kMissionsCourierFoodMart" value="MissionsCourierFoodMart">
@@ -329,6 +345,7 @@
                 <label for="kMissionsCourierBurgerShot">Burger Shot (Las Venturas)</label>
             </li>
         </ul>
+        <a href="#ChecklistHome">Back to Top</a>
     </div>
     <br />
 </body>
