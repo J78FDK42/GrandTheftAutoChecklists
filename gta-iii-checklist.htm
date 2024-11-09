@@ -64,6 +64,7 @@
             // Vehicle Imports/Exports
             UpdateVehicleCollectiblesEmergencyVehicleCraneChecklist();
             // Collectibles
+            UpdateCollectiblesHiddenPackagesChecklist();
         }
 
         // -------------------------- Update Methods -------------------------- //
@@ -412,6 +413,81 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Collectibles -------------------------- //
+
+        // -------------------------- Hidden Packages -------------------------- //
+        function UpdateCollectiblesHiddenPackagesChecklist () {
+            UpdateCollectiblesHiddenPackagesWeapon1Complete();
+            UpdateCollectiblesHiddenPackagesWeapon2Complete();
+            UpdateCollectiblesHiddenPackagesWeapon3Complete();
+            UpdateCollectiblesHiddenPackagesWeapon4Complete();
+            UpdateCollectiblesHiddenPackagesWeapon5Complete();
+            UpdateCollectiblesHiddenPackagesWeapon6Complete();
+            UpdateCollectiblesHiddenPackagesWeapon7Complete();
+            UpdateCollectiblesHiddenPackagesWeapon8Complete();
+            UpdateCollectiblesHiddenPackagesWeapon9Complete();
+            UpdateCollectiblesHiddenPackagesWeapon10Complete();
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon1Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages10");
+            var szChecked = localStorage.getItem("HiddenPackages10");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon2Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages20");
+            var szChecked = localStorage.getItem("HiddenPackages20");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon3Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages30");
+            var szChecked = localStorage.getItem("HiddenPackages30");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon4Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages40");
+            var szChecked = localStorage.getItem("HiddenPackages40");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon5Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages50");
+            var szChecked = localStorage.getItem("HiddenPackages50");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon6Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages60");
+            var szChecked = localStorage.getItem("HiddenPackages60");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon7Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages70");
+            var szChecked = localStorage.getItem("HiddenPackages70");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon8Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages80");
+            var szChecked = localStorage.getItem("HiddenPackages80");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon9Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages90");
+            var szChecked = localStorage.getItem("HiddenPackages90");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHiddenPackagesWeapon10Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages100");
+            var szChecked = localStorage.getItem("HiddenPackages100");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Save Methods -------------------------- //
 
@@ -611,6 +687,49 @@
         function SaveVehicleCollectiblesEmergencyVehicleCraneRhinoComplete () {
             var kCheckbox = document.getElementById("kEmergencyVehicleCraneRhino");
             localStorage.setItem("EmergencyVehicleCraneRhino", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Collectibles -------------------------- //
+
+        // -------------------------- Hidden Packages -------------------------- //
+        function SaveCollectiblesHiddenPackagesWeapon1Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages10");
+            localStorage.setItem("HiddenPackages10", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon2Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages20");
+            localStorage.setItem("HiddenPackages20", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon3Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages30");
+            localStorage.setItem("HiddenPackages30", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon4Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages40");
+            localStorage.setItem("HiddenPackages40", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon5Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages50");
+            localStorage.setItem("HiddenPackages50", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon6Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages60");
+            localStorage.setItem("HiddenPackages60", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon7Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages70");
+            localStorage.setItem("HiddenPackages70", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon8Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages80");
+            localStorage.setItem("HiddenPackages80", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon9Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages90");
+            localStorage.setItem("HiddenPackages90", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHiddenPackagesWeapon10Complete () {
+            var kCheckbox = document.getElementById("kHiddenPackages100");
+            localStorage.setItem("HiddenPackages100", kCheckbox.checked ? "true" : "false");
         }
     </script>
 </head>
@@ -1411,43 +1530,43 @@
     </div>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages10" name="kHiddenPackages10" value="HiddenPackages10">
+            <input type="checkbox" id="kHiddenPackages10" name="kHiddenPackages10" value="HiddenPackages10" onchange="SaveCollectiblesHiddenPackagesWeapon1Complete()">
             <label for="kHiddenPackages10">10 Total - Pistol</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages20" name="kHiddenPackages20" value="HiddenPackages20">
+            <input type="checkbox" id="kHiddenPackages20" name="kHiddenPackages20" value="HiddenPackages20" onchange="SaveCollectiblesHiddenPackagesWeapon2Complete()">
             <label for="kHiddenPackages20">20 Total - Uz-I</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages30" name="kHiddenPackages30" value="HiddenPackages30">
+            <input type="checkbox" id="kHiddenPackages30" name="kHiddenPackages30" value="HiddenPackages30" onchange="SaveCollectiblesHiddenPackagesWeapon3Complete()">
             <label for="kHiddenPackages30">30 Total - Grenades</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages40" name="kHiddenPackages40" value="HiddenPackages40">
+            <input type="checkbox" id="kHiddenPackages40" name="kHiddenPackages40" value="HiddenPackages40" onchange="SaveCollectiblesHiddenPackagesWeapon4Complete()">
             <label for="kHiddenPackages40">40 Total - Shotgun</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages50" name="kHiddenPackages50" value="HiddenPackages50">
+            <input type="checkbox" id="kHiddenPackages50" name="kHiddenPackages50" value="HiddenPackages50" onchange="SaveCollectiblesHiddenPackagesWeapon5Complete()">
             <label for="kHiddenPackages50">50 Total - Body Armor</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages60" name="kHiddenPackages60" value="HiddenPackages60">
+            <input type="checkbox" id="kHiddenPackages60" name="kHiddenPackages60" value="HiddenPackages60" onchange="SaveCollectiblesHiddenPackagesWeapon6Complete()">
             <label for="kHiddenPackages60">60 Total - Molotovs</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages70" name="kHiddenPackages70" value="HiddenPackages70">
+            <input type="checkbox" id="kHiddenPackages70" name="kHiddenPackages70" value="HiddenPackages70" onchange="SaveCollectiblesHiddenPackagesWeapon7Complete()">
             <label for="kHiddenPackages70">70 Total - AK-47</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages80" name="kHiddenPackages80" value="HiddenPackages80">
+            <input type="checkbox" id="kHiddenPackages80" name="kHiddenPackages80" value="HiddenPackages80" onchange="SaveCollectiblesHiddenPackagesWeapon8Complete()">
             <label for="kHiddenPackages80">80 Total - Sniper Rifle</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages90" name="kHiddenPackages90" value="HiddenPackages90">
+            <input type="checkbox" id="kHiddenPackages90" name="kHiddenPackages90" value="HiddenPackages90" onchange="SaveCollectiblesHiddenPackagesWeapon9Complete()">
             <label for="kHiddenPackages90">90 Total - M-16</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kHiddenPackages100" name="kHiddenPackages100" value="HiddenPackages100">
+            <input type="checkbox" id="kHiddenPackages100" name="kHiddenPackages100" value="HiddenPackages100" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
             <label for="kHiddenPackages100">100 Total - Rocket Launcher</label>
         </li>
     </ul>
