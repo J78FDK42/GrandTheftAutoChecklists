@@ -48,6 +48,7 @@
             UpdateDetailedStoryMissionsChecklist();
             UpdateDetailedOffRoadMissionsChecklist();
             UpdateDetailedRemoteControlMissionsChecklist();
+            UpdateDetailedVehicleMissionsChecklist();
         }
         // -------------------------- Update Methods -------------------------- //
 
@@ -175,6 +176,37 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Vehicle Missions -------------------------- //
+        function UpdateDetailedVehicleMissionsChecklist () {
+            UpdateVehicleMissionsVigilanteComplete();
+            UpdateVehicleMissionsFirefighterComplete();
+            UpdateVehicleMissionsParamedicComplete();
+            UpdateVehicleMissionsTaxiComplete();
+        }
+        function UpdateVehicleMissionsVigilanteComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilante");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilante");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsFirefighterComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFirefighter");
+            var szChecked = localStorage.getItem("MissionsVehicleFirefighter");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsParamedicComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleParamedic");
+            var szChecked = localStorage.getItem("MissionsVehicleParamedic");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxi");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxi");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Save Methods -------------------------- //
 
@@ -250,6 +282,23 @@
         function SaveRemoteControlMissionsRumpoRampageComplete () {
             var kCheckbox = document.getElementById("kMissionsRemoteControlRumpoRampage");
             localStorage.setItem("MissionsRemoteControlRumpoRampage", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Vehicle Missions -------------------------- //
+        function SaveVehicleMissionsVigilanteComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilante");
+            localStorage.setItem("MissionsVehicleVigilante", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsFirefighterComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFirefighter");
+            localStorage.setItem("MissionsVehicleFirefighter", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsParamedicComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleParamedic");
+            localStorage.setItem("MissionsVehicleParamedic", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxi");
+            localStorage.setItem("MissionsVehicleTaxi", kCheckbox.checked ? "true" : "false");
         }
     </script>
 </head>
@@ -356,19 +405,19 @@
                 <a id="MissionsVehicle">Vehicle Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleVigilante" name="kMissionsVehicleVigilante" value="MissionsVehicleVigilante">
+                        <input type="checkbox" id="kMissionsVehicleVigilante" name="kMissionsVehicleVigilante" value="MissionsVehicleVigilante" onchange="SaveVehicleMissionsVigilanteComplete()">
                         <label for="kMissionsVehicleVigilante"><a href="#VehicleMissionsVigilante">Vigilante - 60 Threats Eliminated</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleFirefighter" name="kMissionsVehicleFirefighter" value="MissionsVehicleFirefighter">
+                        <input type="checkbox" id="kMissionsVehicleFirefighter" name="kMissionsVehicleFirefighter" value="MissionsVehicleFirefighter" onchange="SaveVehicleMissionsFirefighterComplete()">
                         <label for="kMissionsVehicleFirefighter"><a href="#VehicleMissionsFirefighter">Firefighter - 60 Fires Extnguished</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleParamedic" name="kMissionsVehicleParamedic" value="MissionsVehicleParamedic">
+                        <input type="checkbox" id="kMissionsVehicleParamedic" name="kMissionsVehicleParamedic" value="MissionsVehicleParamedic" onchange="SaveVehicleMissionsParamedicComplete()">
                         <label for="kMissionsVehicleParamedic"><a href="#VehicleMissionsParamedic">Paramedic - Complete Level 12</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleTaxi" name="kMissionsVehicleTaxi" value="MissionsVehicleTaxi">
+                        <input type="checkbox" id="kMissionsVehicleTaxi" name="kMissionsVehicleTaxi" value="MissionsVehicleTaxi" onchange="SaveVehicleMissionsTaxiComplete()">
                         <label for="kMissionsVehicleTaxi">Taxi - 100 Fares Completed</label>
                     </li>
                 </ul>
@@ -480,6 +529,22 @@
                         <input type="checkbox" id="kMissionsToniCiprianiTakingOutTheLaundry" name="kMissionsToniCiprianiTakingOutTheLaundry" value="MissionsToniCiprianiTakingOutTheLaundry">
                         <label for="kMissionsToniCiprianiTakingOutTheLaundry">Taking Out the Laundry</label>
                     </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsToniCiprianiThePickUp" name="kMissionsToniCiprianiThePickUp" value="MissionsToniCiprianiThePickUp">
+                        <label for="kMissionsToniCiprianiThePickUp">The Pick-Up</label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsToniCiprianiSalvatoresCalledAMeeting" name="kMissionsToniCiprianiSalvatoresCalledAMeeting" value="MissionsToniCiprianiSalvatoresCalledAMeeting">
+                        <label for="kMissionsToniCiprianiSalvatoresCalledAMeeting">Salvatore's Called a Meeting</label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsToniCiprianiTriadsAndTribulations" name="kMissionsToniCiprianiTriadsAndTribulations" value="MissionsToniCiprianiTriadsAndTribulations">
+                        <label for="kMissionsToniCiprianiTriadsAndTribulations">Triads and Tribulations</label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kMissionsToniCiprianiBlowFish" name="kMissionsToniCiprianiBlowFish" value="MissionsToniCiprianiBlowFish">
+                        <label for="kMissionsToniCiprianiBlowFish">Blow Fish</label>
+                    </li>
                 </ul>
             </div>
         </li>
@@ -508,49 +573,12 @@
         </li>
         <li>
             <div>
-                <a>Toni Cipriani</a>
-                <ul>
-                    <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsToniCiprianiThePickUp" name="kMissionsToniCiprianiThePickUp" value="MissionsToniCiprianiThePickUp">
-                        <label for="kMissionsToniCiprianiThePickUp">The Pick-Up</label>
-                    </li>
-                    <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsToniCiprianiSalvatoresCalledAMeeting" name="kMissionsToniCiprianiSalvatoresCalledAMeeting" value="MissionsToniCiprianiSalvatoresCalledAMeeting">
-                        <label for="kMissionsToniCiprianiSalvatoresCalledAMeeting">Salvatore's Called a Meeting</label>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div>
                 <a>Salvatore Leone</a>
                 <ul>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kMissionsSalvatoreLeoneChaperone" name="kMissionsSalvatoreLeoneChaperone" value="MissionsSalvatoreLeoneChaperone">
                         <label for="kMissionsSalvatoreLeoneChaperone">Chaperone</label>
                     </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div>
-                <a>Toni Cipriani</a>
-                <ul>
-                    <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsToniCiprianiTriadsAndTribulations" name="kMissionsToniCiprianiTriadsAndTribulations" value="MissionsToniCiprianiTriadsAndTribulations">
-                        <label for="kMissionsToniCiprianiTriadsAndTribulations">Triads and Tribulations</label>
-                    </li>
-                    <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsToniCiprianiBlowFish" name="kMissionsToniCiprianiBlowFish" value="MissionsToniCiprianiBlowFish">
-                        <label for="kMissionsToniCiprianiBlowFish">Blow Fish</label>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div>
-                <a>Salvatore Leone</a>
-                <ul>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kMissionsSalvatoreLeoneCuttingTheGrass" name="kMissionsSalvatoreLeoneCuttingTheGrass" value="MissionsSalvatoreLeoneCuttingTheGrass">
                         <label for="kMissionsSalvatoreLeoneCuttingTheGrass">Cutting the Grass</label>
