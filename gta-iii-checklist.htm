@@ -58,6 +58,8 @@
             // Off-Road Missions
             // RC Missions
             // Vehicle Missions
+            UpdateVehicleMissionsVigilanteChecklist();
+            UpdateVehicleMissionsFirefighterChecklist();
             UpdateVehicleMissionsParamedicChecklist();
             // Vehicle Imports/Exports
             // Collectibles
@@ -270,7 +272,74 @@
         }
 
         // -------------------------- Detailed Missions -------------------------- //
+        function UpdateVehicleMissionsVigilanteChecklist () {
+            UpdateVehicleMissionsVigilanteBribe1Complete();
+            UpdateVehicleMissionsVigilanteBribe2Complete();
+            UpdateVehicleMissionsVigilanteBribe3Complete();
+            UpdateVehicleMissionsVigilanteBribe4Complete();
+            UpdateVehicleMissionsVigilanteBribe5Complete();
+            UpdateVehicleMissionsVigilanteBribe6Complete();
+        }
+        function UpdateVehicleMissionsVigilanteBribe1Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe1");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe1");
 
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteBribe2Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe2");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteBribe3Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe3");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteBribe4Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe4");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe4");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteBribe5Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe5");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe5");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteBribe6Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe6");
+            var szChecked = localStorage.getItem("MissionsVehicleVigilanteBribe6");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Firefighter Mission -------------------------- //
+        function UpdateVehicleMissionsFirefighterChecklist () {
+            UpdateVehicleMissionsFirefighterPortlandComplete();
+            UpdateVehicleMissionsFirefighterStauntonComplete();
+            UpdateVehicleMissionsFirefighterShoresideComplete();
+        }
+        function UpdateVehicleMissionsFirefighterPortlandComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterPortlandIsland");
+            var szChecked = localStorage.getItem("MissionsVehicleFireFighterPortlandIsland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsFirefighterStauntonComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterStauntonIsland");
+            var szChecked = localStorage.getItem("MissionsVehicleFireFighterStauntonIsland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsFirefighterShoresideComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterShoresideVale");
+            var szChecked = localStorage.getItem("MissionsVehicleFireFighterShoresideVale");
+
+            kCheckbox.checked = szChecked === "true";
+        }
         // -------------------------- Paramedic Mission -------------------------- //
         function UpdateVehicleMissionsParamedicChecklist () {
             UpdateVehicleMissionsParamedicLevel8Complete();
@@ -410,6 +479,44 @@
 
         // -------------------------- Detailed Missions -------------------------- //
 
+        // -------------------------- Vigilante Mission -------------------------- //
+        function SaveVehicleMissionsVigilanteBribe1Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe1");
+            localStorage.setItem("MissionsVehicleVigilanteBribe1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteBribe2Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe2");
+            localStorage.setItem("MissionsVehicleVigilanteBribe2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteBribe3Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe3");
+            localStorage.setItem("MissionsVehicleVigilanteBribe3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteBribe4Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe4");
+            localStorage.setItem("MissionsVehicleVigilanteBribe4", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteBribe5Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe5");
+            localStorage.setItem("MissionsVehicleVigilanteBribe5", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteBribe6Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe6");
+            localStorage.setItem("MissionsVehicleVigilanteBribe6", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Firefighter Mission -------------------------- //
+        function SaveVehicleMissionsFirefighterPortlandComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterPortlandIsland");
+            localStorage.setItem("MissionsVehicleFireFighterPortlandIsland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsFirefighterStauntonComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterStauntonIsland");
+            localStorage.setItem("MissionsVehicleFireFighterStauntonIsland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsFirefighterShoresideComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleFireFighterShoresideVale");
+            localStorage.setItem("MissionsVehicleFireFighterShoresideVale", kCheckbox.checked ? "true" : "false");
+        }
         // -------------------------- Paramedic Mission -------------------------- //
         function SaveVehicleMissionsParamedicLevel8Complete () {
             var kCheckbox = document.getElementById("kMissionsVehicleParamedicLevel8");
@@ -942,6 +1049,60 @@
     <br />
     <hr />
     <h2>Vehicle Missions</h2>
+    <h3 class="MissionCategory"><a id="VehicleMissionsVigilante">Vigilante Missions</a></h3>
+    <div>
+        <h4 class="MissionReward">Reward</h4>
+        <span>Up to 6 Police Bribes at Safehouse</span>
+    </div>
+    <ul>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe1" name="kMissionsVehicleVigilanteBribe1" value="MissionsVehicleVigilanteBribe1" onchange="SaveVehicleMissionsVigilanteBribe1Complete()">
+            <label for="kMissionsVehicleVigilanteBribe1">Bribe #1 - Portland Island +10 Threats Eliminated</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe2" name="kMissionsVehicleVigilanteBribe2" value="MissionsVehicleVigilanteBribe2" onchange="SaveVehicleMissionsVigilanteBribe2Complete()">
+            <label for="kMissionsVehicleVigilanteBribe2">Bribe #2 - Portland Island +10 Threats Eliminated</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe3" name="kMissionsVehicleVigilanteBribe3" value="MissionsVehicleVigilanteBribe3" onchange="SaveVehicleMissionsVigilanteBribe3Complete()">
+            <label for="kMissionsVehicleVigilanteBribe3">Bribe #3 - Staunton Island +10 Threats Eliminated</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe4" name="kMissionsVehicleVigilanteBribe4" value="MissionsVehicleVigilanteBribe4" onchange="SaveVehicleMissionsVigilanteBribe4Complete()">
+            <label for="kMissionsVehicleVigilanteBribe4">Bribe #4 - Staunton Island +10 Threats Eliminated</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe5" name="kMissionsVehicleVigilanteBribe5" value="MissionsVehicleVigilanteBribe5" onchange="SaveVehicleMissionsVigilanteBribe5Complete()">
+            <label for="kMissionsVehicleVigilanteBribe5">Bribe #5 - Shoreside Vale +10 Threats Eliminated</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleVigilanteBribe6" name="kMissionsVehicleVigilanteBribe6" value="MissionsVehicleVigilanteBribe6" onchange="SaveVehicleMissionsVigilanteBribe6Complete()">
+            <label for="kMissionsVehicleVigilanteBribe6">Bribe #6 - Shoreside Vale +10 Threats Eliminated</label>
+        </li>
+    </ul>
+    <a href="#ChecklistHome">Back to Top</a>
+    <br />
+    <h3 class="MissionCategory"><a id="VehicleMissionsFirefighter">Firefighter Missions</a></h3>
+    <div>
+        <h4 class="MissionReward">Reward</h4>
+        <span>Flamethrower Pickup at Safehouse</span>
+    </div>
+    <ul>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleFireFighterPortlandIsland" name="kMissionsVehicleFireFighterPortlandIsland" value="MissionsVehicleFireFighterPortlandIsland" onchange="SaveVehicleMissionsFirefighterPortlandComplete()">
+            <label for="kMissionsVehicleFireFighterPortlandIsland">Portland Island +20 Fires Extinguished</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleFireFighterStauntonIsland" name="kMissionsVehicleFireFighterStauntonIsland" value="MissionsVehicleFireFighterStauntonIsland" onchange="SaveVehicleMissionsFirefighterStauntonComplete()">
+            <label for="kMissionsVehicleFireFighterStauntonIsland">Staunton Island +20 Fires Extinguished</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsVehicleFireFighterShoresideVale" name="kMissionsVehicleFireFighterShoresideVale" value="MissionsVehicleFireFighterShoresideVale" onchange="SaveVehicleMissionsFirefighterShoresideComplete()">
+            <label for="kMissionsVehicleFireFighterShoresideVale">Shoreside Vale +20 Fires Extinguished</label>
+        </li>
+    </ul>
+    <a href="#ChecklistHome">Back to Top</a>
+    <br />
     <h3 class="MissionCategory"><a id="VehicleMissionsParamedic">Paramedic Mission</a></h3>
     <div>
         <h4 class="MissionReward">Rewards</h4>
@@ -967,60 +1128,6 @@
             </li>
         </ul>
     </div>
-    <a href="#ChecklistHome">Back to Top</a>
-    <br />
-    <h3 class="MissionCategory"><a id="VehicleMissionsVigilante">Vigilante Missions</a></h3>
-    <div>
-        <h4 class="MissionReward">Reward</h4>
-        <span>Up to 6 Police Bribes at Safehouse</span>
-    </div>
-    <ul>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe1" name="kMissionsVehicleVigilanteBribe1" value="MissionsVehicleVigilanteBribe1">
-            <label for="kMissionsVehicleVigilanteBribe1">Bribe #1 - Portland Island +10 Threats Eliminated</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe2" name="kMissionsVehicleVigilanteBribe2" value="MissionsVehicleVigilanteBribe2">
-            <label for="kMissionsVehicleVigilanteBribe2">Bribe #2 - Portland Island +10 Threats Eliminated</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe3" name="kMissionsVehicleVigilanteBribe3" value="MissionsVehicleVigilanteBribe3">
-            <label for="kMissionsVehicleVigilanteBribe3">Bribe #3 - Staunton Island +10 Threats Eliminated</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe4" name="kMissionsVehicleVigilanteBribe4" value="MissionsVehicleVigilanteBribe4">
-            <label for="kMissionsVehicleVigilanteBribe4">Bribe #4 - Staunton Island +10 Threats Eliminated</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe5" name="kMissionsVehicleVigilanteBribe5" value="MissionsVehicleVigilanteBribe5">
-            <label for="kMissionsVehicleVigilanteBribe5">Bribe #5 - Shoreside Vale +10 Threats Eliminated</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleVigilanteBribe6" name="kMissionsVehicleVigilanteBribe6" value="MissionsVehicleVigilanteBribe6">
-            <label for="kMissionsVehicleVigilanteBribe6">Bribe #6 - Shoreside Vale +10 Threats Eliminated</label>
-        </li>
-    </ul>
-    <a href="#ChecklistHome">Back to Top</a>
-    <br />
-    <h3 class="MissionCategory"><a id="VehicleMissionsFirefighter">Firefighter Missions</a></h3>
-    <div>
-        <h4 class="MissionReward">Reward</h4>
-        <span>Flamethrower Pickup at Safehouse</span>
-    </div>
-    <ul>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleFireFighterPortlandIsland" name="kMissionsVehicleFireFighterPortlandIsland" value="MissionsVehicleFireFighterPortlandIsland">
-            <label for="kMissionsVehicleFireFighterPortlandIsland">Portland Island +20 Fires Extinguished</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleFireFighterStauntonIsland" name="kMissionsVehicleFireFighterStauntonIsland" value="MissionsVehicleFireFighterStauntonIsland">
-            <label for="kMissionsVehicleFireFighterStauntonIsland">Staunton Island +20 Fires Extinguished</label>
-        </li>
-        <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleFireFighterShoresideVale" name="kMissionsVehicleFireFighterShoresideVale" value="MissionsVehicleFireFighterShoresideVale">
-            <label for="kMissionsVehicleFireFighterShoresideVale">Shoreside Vale +20 Fires Extinguished</label>
-        </li>
-    </ul>
     <a href="#ChecklistHome">Back to Top</a>
     <br />
     <hr />
