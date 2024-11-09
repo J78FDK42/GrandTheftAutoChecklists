@@ -22,33 +22,205 @@
             margin-bottom: 0.1em;
         }
     </style>
+    <script type="text/javascript">
+        function UpdateOnLoad () {
+            UpdateChecklist();
+            UpdateDetailedChecklist();
+        }
+        function UpdateChecklist () {
+            UpdateStoryMissionsComplete();
+            UpdateOffRoadMissionsComplete();
+            UpdateRemoteControlMissionsComplete();
+            UpdateVehicleMissionsComplete();
+            UpdateCollectiblesVehicleComplete();
+            UpdateCollectiblesComplete();
+        }
+        function UpdateDetailedChecklist () {
+            UpdateDetailedStoryMissionsChecklist();
+            UpdateDetailedOffRoadMissionsChecklist();
+        }
+        // -------------------------- Update Methods -------------------------- //
+
+        // -------------------------- 100% Checklist -------------------------- //
+        function UpdateStoryMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsStory");
+            var szChecked = localStorage.getItem("MissionsStory");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateOffRoadMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoad");
+            var szChecked = localStorage.getItem("MissionsOffRoad");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRemoteControlMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsRC");
+            var szChecked = localStorage.getItem("MissionsRC");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicle");
+            var szChecked = localStorage.getItem("MissionsVehicle");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesVehicleComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicle");
+            var szChecked = localStorage.getItem("CollectiblesVehicle");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesComplete () {
+            var kCheckbox = document.getElementById("kCollectibles");
+            var szChecked = localStorage.getItem("Collectibles");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+
+        // -------------------------- Story Missions -------------------------- //
+        function UpdateDetailedStoryMissionsChecklist () {
+            UpdateStoryMissionsPortlandIslandComplete();
+            UpdateStoryMissionsStauntonIslandComplete();
+            UpdateStoryMissionsShoresideValeComplete();
+        }
+        function UpdateStoryMissionsPortlandIslandComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryPortlandIsland");
+            var szChecked = localStorage.getItem("MissionsStoryPortlandIsland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStoryMissionsStauntonIslandComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryStauntonIsland");
+            var szChecked = localStorage.getItem("MissionsStoryStauntonIsland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStoryMissionsShoresideValeComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryShoresideVale");
+            var szChecked = localStorage.getItem("MissionsStoryShoresideVale");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Off-Road Missions -------------------------- //
+        function UpdateDetailedOffRoadMissionsChecklist () {
+            UpdateOffRoadMissionsPatriotPlaygroundComplete();
+            UpdateOffRoadMissionsMultistoryMahemComplete();
+            UpdateOffRoadMissionsARideInTheParkComplete();
+            UpdateOffRoadMissionsGrippedComplete();
+        }
+        function UpdateOffRoadMissionsPatriotPlaygroundComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadPatriotPlayground");
+            var szChecked = localStorage.getItem("MissionsOffRoadPatriotPlayground");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateOffRoadMissionsMultistoryMahemComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadMultistoryMahem");
+            var szChecked = localStorage.getItem("MissionsOffRoadMultistoryMahem");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateOffRoadMissionsARideInTheParkComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadARideInThePark");
+            var szChecked = localStorage.getItem("MissionsOffRoadARideInThePark");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateOffRoadMissionsGrippedComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadGripped");
+            var szChecked = localStorage.getItem("MissionsOffRoadGripped");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+
+        // -------------------------- Save Methods -------------------------- //
+
+        // -------------------------- 100% Checklist -------------------------- //
+        function SaveStoryMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsStory");
+            localStorage.setItem("MissionsStory", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveOffRoadMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoad");
+            localStorage.setItem("MissionsOffRoad", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRemoteControlMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsRC");
+            localStorage.setItem("MissionsRC", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicle");
+            localStorage.setItem("MissionsVehicle", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleCollectiblesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicle");
+            localStorage.setItem("CollectiblesVehicle", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesComplete () {
+            var kCheckbox = document.getElementById("kCollectibles");
+            localStorage.setItem("Collectibles", kCheckbox.checked ? "true" : "false");
+        }
+
+        // -------------------------- Story Missions -------------------------- //
+        function SaveStoryMissionsPortlandIslandComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryPortlandIsland");
+            localStorage.setItem("MissionsStoryPortlandIsland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStoryMissionsStauntonIslandComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryStauntonIsland");
+            localStorage.setItem("MissionsStoryStauntonIsland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStoryMissionsShoresideValeComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryShoresideVale");
+            localStorage.setItem("MissionsStoryShoresideVale", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Off-Road Missions -------------------------- //
+        function SaveOffRoadMissionsPatriotPlaygroundComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadPatriotPlayground");
+            localStorage.setItem("MissionsOffRoadPatriotPlayground", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveOffRoadMissionsMultistoryMahemComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadMultistoryMahem");
+            localStorage.setItem("MissionsOffRoadMultistoryMahem", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveOffRoadMissionsARideInTheParkComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadARideInThePark");
+            localStorage.setItem("MissionsOffRoadARideInThePark", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveOffRoadMissionsGrippedComplete () {
+            var kCheckbox = document.getElementById("kMissionsOffRoadGripped");
+            localStorage.setItem("MissionsOffRoadGripped", kCheckbox.checked ? "true" : "false");
+        }
+    </script>
 </head>
-<body>
+<body onload="UpdateOnLoad()">
     <h1><a id="ChecklistHome">100% Checklist - GTA III</a></h1>
     <h2>Required for 100%</h2>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsStory" name="kMissionsStory" value="MissionsStory">
+            <input type="checkbox" id="kMissionsStory" name="kMissionsStory" value="MissionsStory" onchange="SaveStoryMissionsComplete()">
             <label for="kMissionsStory"><a href="#MissionsStory">Story Missions</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsOffRoad" name="kMissionsOffRoad" value="MissionsOffRoad">
+            <input type="checkbox" id="kMissionsOffRoad" name="kMissionsOffRoad" value="MissionsOffRoad" onchange="SaveOffRoadMissionsComplete()">
             <label for="kMissionsOffRoad"><a href="#MissionsOffRoad">Off-Road Missions</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsRC" name="kMissionsRC" value="MissionsRC">
+            <input type="checkbox" id="kMissionsRC" name="kMissionsRC" value="MissionsRC" onchange="SaveRemoteControlMissionsComplete()">
             <label for="kMissionsRC"><a href="#MissionsRC">RC Missions</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicle" name="kMissionsVehicle" value="MissionsVehicle">
+            <input type="checkbox" id="kMissionsVehicle" name="kMissionsVehicle" value="MissionsVehicle" onchange="SaveVehicleMissionsComplete()">
             <label for="kMissionsVehicle"><a href="#MissionsVehicle">Vehicle Missions</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kCollectiblesVehicle" name="kCollectiblesVehicle" value="CollectiblesVehicle">
+            <input type="checkbox" id="kCollectiblesVehicle" name="kCollectiblesVehicle" value="CollectiblesVehicle" onchange="SaveVehicleCollectiblesComplete()">
             <label for="kCollectiblesVehicle"><a href="#CollectiblesVehicle">Vehicle Import/Export</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kCollectibles" name="kCollectibles" value="Collectibles">
+            <input type="checkbox" id="kCollectibles" name="kCollectibles" value="Collectibles" onchange="SaveCollectiblesComplete()">
             <label for="kCollectibles"><a href="#Collectibles">Collectibles</a></label>
         </li>
     </ul>
@@ -61,15 +233,15 @@
                 <a id="MissionsStory">Story Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryPortlandIsland" name="kMissionsStoryPortlandIsland" value="MissionsStoryPortlandIsland">
+                        <input type="checkbox" id="kMissionsStoryPortlandIsland" name="kMissionsStoryPortlandIsland" value="MissionsStoryPortlandIsland" onchange="SaveStoryMissionsPortlandIslandComplete()">
                         <label for="kMissionsStoryPortlandIsland"><a href="#MissionsStoryPortlandIsland">Portland Island</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryStauntonIsland" name="kMissionsStoryStauntonIsland" value="MissionsStoryStauntonIsland">
+                        <input type="checkbox" id="kMissionsStoryStauntonIsland" name="kMissionsStoryStauntonIsland" value="MissionsStoryStauntonIsland" onchange="SaveStoryMissionsStauntonIslandComplete()">
                         <label for="kMissionsStoryStauntonIsland"><a href="#MissionsStoryStauntonIsland">Staunton Island</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryShoresideVale" name="kMissionsStoryShoresideVale" value="MissionsStoryShoresideVale">
+                        <input type="checkbox" id="kMissionsStoryShoresideVale" name="kMissionsStoryShoresideVale" value="MissionsStoryShoresideVale" onchange="SaveStoryMissionsShoresideValeComplete()">
                         <label for="kMissionsStoryShoresideVale"><a href="#MissionsStoryShoresideVale">Shoreside Vale</a></label>
                     </li>
                 </ul>
@@ -80,19 +252,19 @@
                 <a id="MissionsOffRoad">Off-Road Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsOffRoadPatriotPlayground" name="kMissionsOffRoadPatriotPlayground" value="MissionsOffRoadPatriotPlayground">
+                        <input type="checkbox" id="kMissionsOffRoadPatriotPlayground" name="kMissionsOffRoadPatriotPlayground" value="MissionsOffRoadPatriotPlayground" onchange="SaveOffRoadMissionsPatriotPlaygroundComplete()">
                         <label for="kMissionsOffRoadPatriotPlayground">Patriot Playground</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsOffRoadMultistoryMahem" name="kMissionsOffRoadMultistoryMahem" value="MissionsOffRoadMultistoryMahem">
+                        <input type="checkbox" id="kMissionsOffRoadMultistoryMahem" name="kMissionsOffRoadMultistoryMahem" value="MissionsOffRoadMultistoryMahem" onchange="SaveOffRoadMissionsMultistoryMahemComplete()">
                         <label for="kMissionsOffRoadMultistoryMahem">Multistory Mahem</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsOffRoadARideInThePark" name="kMissionsOffRoadARideInThePark" value="MissionsOffRoadARideInThePark">
+                        <input type="checkbox" id="kMissionsOffRoadARideInThePark" name="kMissionsOffRoadARideInThePark" value="MissionsOffRoadARideInThePark" onchange="SaveOffRoadMissionsARideInTheParkComplete()">
                         <label for="kMissionsOffRoadARideInThePark">A Ride in the Park</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsOffRoadGripped" name="kMissionsOffRoadGripped" value="MissionsOffRoadGripped">
+                        <input type="checkbox" id="kMissionsOffRoadGripped" name="kMissionsOffRoadGripped" value="MissionsOffRoadGripped" onchange="SaveOffRoadMissionsGrippedComplete()">
                         <label for="kMissionsOffRoadGripped">Gripped!</label>
                     </li>
                 </ul>
