@@ -246,7 +246,27 @@
         }
         // -------------------------- Collectibles -------------------------- //
         function UpdateDetailedCollectiblesChecklist () {
+            UpdateCollectiblesHiddenPackagesComplete();
+            UpdateCollectiblesRampagesComplete();
+            UpdateCollectiblesUniqueJumpsComplete();
+        }
+        function UpdateCollectiblesHiddenPackagesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesHiddenPackages");
+            var szChecked = localStorage.getItem("CollectiblesHiddenPackages");
 
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesRampagesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesRampages");
+            var szChecked = localStorage.getItem("CollectiblesRampages");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesUniqueJumpsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesUniqueJumps");
+            var szChecked = localStorage.getItem("CollectiblesUniqueJumps");
+
+            kCheckbox.checked = szChecked === "true";
         }
 
         // -------------------------- Detailed Missions -------------------------- //
@@ -373,6 +393,19 @@
         function SaveVehicleCollectiblesShoresideGarageComplete () {
             var kCheckbox = document.getElementById("kMissionsVehicleImportShoresideValeGarageList");
             localStorage.setItem("MissionsVehicleImportShoresideValeGarageList", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Collectibles -------------------------- //
+        function SaveCollectiblesHiddenPackagesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesHiddenPackages");
+            localStorage.setItem("CollectiblesHiddenPackages", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesRampagesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesRampages");
+            localStorage.setItem("CollectiblesRampages", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesUniqueJumpsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesUniqueJumps");
+            localStorage.setItem("CollectiblesUniqueJumps", kCheckbox.checked ? "true" : "false");
         }
 
         // -------------------------- Detailed Missions -------------------------- //
@@ -533,15 +566,15 @@
                 <a id="Collectibles">Collectibles</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesHiddenPackages" name="kCollectiblesHiddenPackages" value="CollectiblesHiddenPackages">
+                        <input type="checkbox" id="kCollectiblesHiddenPackages" name="kCollectiblesHiddenPackages" value="CollectiblesHiddenPackages" onchange="SaveCollectiblesHiddenPackagesComplete()">
                         <label for="kCollectiblesHiddenPackages"><a href="#CollectiblesHiddenPackages">Collect 100 Hidden Packages</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesRampages" name="kCollectiblesRampages" value="CollectiblesRampages">
+                        <input type="checkbox" id="kCollectiblesRampages" name="kCollectiblesRampages" value="CollectiblesRampages" onchange="SaveCollectiblesRampagesComplete()">
                         <label for="kCollectiblesRampages">Complete 20 Rampages</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesUniqueJumps" name="kCollectiblesUniqueJumps" value="CollectiblesUniqueJumps">
+                        <input type="checkbox" id="kCollectiblesUniqueJumps" name="kCollectiblesUniqueJumps" value="CollectiblesUniqueJumps" onchange="SaveCollectiblesUniqueJumpsComplete()">
                         <label for="kCollectiblesUniqueJumps">Complete 20 Unique Jumps</label>
                     </li>
                 </ul>
