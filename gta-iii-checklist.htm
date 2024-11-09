@@ -6,7 +6,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        br {
+        br.Spacer {
             margin-bottom: 1em;
         }
         li.CheckListItem {
@@ -20,6 +20,15 @@
         h4.MissionReward {
             margin-top: 0.1em;
             margin-bottom: 0.1em;
+        }
+        table, tr {
+            margin: 0;
+            padding: 0;
+        }
+        th, td {
+            margin: 0;
+            padding: 4px;
+            border: 1px solid black;
         }
     </style>
     <script type="text/javascript">
@@ -38,6 +47,7 @@
         function UpdateDetailedChecklist () {
             UpdateDetailedStoryMissionsChecklist();
             UpdateDetailedOffRoadMissionsChecklist();
+            UpdateDetailedRemoteControlMissionsChecklist();
         }
         // -------------------------- Update Methods -------------------------- //
 
@@ -134,6 +144,37 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Remote Control Missions -------------------------- //
+        function UpdateDetailedRemoteControlMissionsChecklist () {
+            UpdateRemoteControlMissionsDiabloDestructionComplete();
+            UpdateRemoteControlMissionsMafiaMasacreComplete();
+            UpdateRemoteControlMissionsCasinoCalamityComplete();
+            UpdateRemoteControlMissionsRumpoRampageComplete();
+        }
+        function UpdateRemoteControlMissionsDiabloDestructionComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlDiabloDesctruction");
+            var szChecked = localStorage.getItem("MissionsRemoteControlDiabloDesctruction");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRemoteControlMissionsMafiaMasacreComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlMafiaMasacre");
+            var szChecked = localStorage.getItem("MissionsRemoteControlMafiaMasacre");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRemoteControlMissionsCasinoCalamityComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlCasinoCalamity");
+            var szChecked = localStorage.getItem("MissionsRemoteControlCasinoCalamity");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRemoteControlMissionsRumpoRampageComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlRumpoRampage");
+            var szChecked = localStorage.getItem("MissionsRemoteControlRumpoRampage");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Save Methods -------------------------- //
 
@@ -192,6 +233,23 @@
         function SaveOffRoadMissionsGrippedComplete () {
             var kCheckbox = document.getElementById("kMissionsOffRoadGripped");
             localStorage.setItem("MissionsOffRoadGripped", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Remote Control Missions -------------------------- //
+        function SaveRemoteControlMissionsDiabloDestructionComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlDiabloDesctruction");
+            localStorage.setItem("MissionsRemoteControlDiabloDesctruction", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRemoteControlMissionsMafiaMasacreComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlMafiaMasacre");
+            localStorage.setItem("MissionsRemoteControlMafiaMasacre", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRemoteControlMissionsCasinoCalamityComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlCasinoCalamity");
+            localStorage.setItem("MissionsRemoteControlCasinoCalamity", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRemoteControlMissionsRumpoRampageComplete () {
+            var kCheckbox = document.getElementById("kMissionsRemoteControlRumpoRampage");
+            localStorage.setItem("MissionsRemoteControlRumpoRampage", kCheckbox.checked ? "true" : "false");
         }
     </script>
 </head>
@@ -275,19 +333,19 @@
                 <a id="MissionsRC">RC Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsRemoteControlDiabloDesctruction" name="kMissionsRemoteControlDiabloDesctruction" value="MissionsRemoteControlDiabloDesctruction">
+                        <input type="checkbox" id="kMissionsRemoteControlDiabloDesctruction" name="kMissionsRemoteControlDiabloDesctruction" value="MissionsRemoteControlDiabloDesctruction" onchange="SaveRemoteControlMissionsDiabloDestructionComplete()">
                         <label for="kMissionsRemoteControlDiabloDesctruction">Diablo Desctruction</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsRemoteControlMafiaMasacre" name="kMissionsRemoteControlMafiaMasacre" value="MissionsRemoteControlMafiaMasacre">
+                        <input type="checkbox" id="kMissionsRemoteControlMafiaMasacre" name="kMissionsRemoteControlMafiaMasacre" value="MissionsRemoteControlMafiaMasacre" onchange="SaveRemoteControlMissionsMafiaMasacreComplete()">
                         <label for="kMissionsRemoteControlMafiaMasacre">Mafia Masacre</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsRemoteControlCasinoCalamity" name="kMissionsRemoteControlCasinoCalamity" value="MissionsRemoteControlCasinoCalamity">
+                        <input type="checkbox" id="kMissionsRemoteControlCasinoCalamity" name="kMissionsRemoteControlCasinoCalamity" value="MissionsRemoteControlCasinoCalamity" onchange="SaveRemoteControlMissionsCasinoCalamityComplete()">
                         <label for="kMissionsRemoteControlCasinoCalamity">Casino Calamity</label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsRemoteControlRumpoRampage" name="kMissionsRemoteControlRumpoRampage" value="MissionsRemoteControlRumpoRampage">
+                        <input type="checkbox" id="kMissionsRemoteControlRumpoRampage" name="kMissionsRemoteControlRumpoRampage" value="MissionsRemoteControlRumpoRampage" onchange="SaveRemoteControlMissionsRumpoRampageComplete()">
                         <label for="kMissionsRemoteControlRumpoRampage">Rumpo Rampage</label>
                     </li>
                 </ul>
@@ -341,7 +399,7 @@
                 <ul>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kCollectiblesHiddenPackages" name="kCollectiblesHiddenPackages" value="CollectiblesHiddenPackages">
-                        <label for="kCollectiblesHiddenPackages">Collect 100 Hidden Packages</label>
+                        <label for="kCollectiblesHiddenPackages"><a href="#CollectiblesHiddenPackages">Collect 100 Hidden Packages</a></label>
                     </li>
                     <li class="CheckListItem">
                         <input type="checkbox" id="kCollectiblesRampages" name="kCollectiblesRampages" value="CollectiblesRampages">
@@ -776,6 +834,58 @@
         <li class="CheckListItem">
             <input type="checkbox" id="kVehicleImportShoresideGarageTaxi" name="kVehicleImportShoresideGarageTaxi" value="VehicleImportShoresideGarageTaxi">
             <label for="kVehicleImportShoresideGarageTaxi">Taxi</label>
+        </li>
+    </ul>
+    <a href="#ChecklistHome">Back to Top</a>
+    <br />
+    <hr />
+    <h2>Collectibles</h2>
+    <h3 class="MissionCategory"><a id="CollectiblesHiddenPackages">Hidden Packages Checklist</a></h3>
+    <div>
+        <h4 class="MissionReward">Reward</h4>
+        <span>$1,000,000 + $1,000 for each Package Collected</span><br />
+        <span>Safehouse Item Pickup for each 10 Packages Collected</span>
+    </div>
+    <ul>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages10" name="kHiddenPackages10" value="HiddenPackages10">
+            <label for="kHiddenPackages10">10 Total - Pistol</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages20" name="kHiddenPackages20" value="HiddenPackages20">
+            <label for="kHiddenPackages20">20 Total - Uz-I</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages30" name="kHiddenPackages30" value="HiddenPackages30">
+            <label for="kHiddenPackages30">30 Total - Grenades</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages40" name="kHiddenPackages40" value="HiddenPackages40">
+            <label for="kHiddenPackages40">40 Total - Shotgun</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages50" name="kHiddenPackages50" value="HiddenPackages50">
+            <label for="kHiddenPackages50">50 Total - Body Armor</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages60" name="kHiddenPackages60" value="HiddenPackages60">
+            <label for="kHiddenPackages60">60 Total - Molotovs</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages70" name="kHiddenPackages70" value="HiddenPackages70">
+            <label for="kHiddenPackages70">70 Total - AK-47</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages80" name="kHiddenPackages80" value="HiddenPackages80">
+            <label for="kHiddenPackages80">80 Total - Sniper Rifle</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages90" name="kHiddenPackages90" value="HiddenPackages90">
+            <label for="kHiddenPackages90">90 Total - M-16</label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kHiddenPackages100" name="kHiddenPackages100" value="HiddenPackages100">
+            <label for="kHiddenPackages100">100 Total - Rocket Launcher</label>
         </li>
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
