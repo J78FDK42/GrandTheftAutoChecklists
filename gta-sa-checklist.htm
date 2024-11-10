@@ -63,7 +63,7 @@
         function UpdateDetailedMissions () {
             // Story Missions
             //UpdateMissionsLosSantosRedCountyChecklist();
-            //UpdateMissionsSanFieroBadlandsChecklist();
+            //UpdateMissionsSanFierroBadlandsChecklist();
             //UpdateMissionsLasVenturasDesertChecklist();
             //UpdateMissionsReturnToLosSantosChecklist();
             // Asset Missions
@@ -100,8 +100,8 @@
         function UpdateCharacterMissions () {
             // Los Santos / Red County Missions
             //UpdateCharacterMissionsLosSantosRedCounty();
-            // San Fiero / Badlands Missions
-            //UpdateCharacterMissionsSanFieroBadlands();
+            // San Fierro / Badlands Missions
+            //UpdateCharacterMissionsSanFierroBadlands();
             // Las Venturas / Desert Missions
             //UpdateCharacterMissionsLasVenturasDesert();
             // Return to Los Santos Missions
@@ -328,20 +328,20 @@
                 <a id="kMissionsStoryChecklist">Story Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryLosSantosRedCounty" name="kMissionsStoryLosSantosRedCounty" value="MissionsStoryLosSantosRedCounty">
-                        <label for="kMissionsStoryLosSantosRedCounty"><a href="#MissionsStoryLosSantosRedCounty">Los Santos / Red County</a></label>
+                        <input type="checkbox" id="kMissionsStoryLosSantosRedCounty" name="kMissionsStoryLosSantosRedCounty" value="kMissionsStoryLosSantosRedCounty">
+                        <label for="kMissionsStoryLosSantosRedCounty"><a href="#kMissionsStoryLosSantosRedCountyChecklist">Los Santos / Red County</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryBadlandsSanFiero" name="kMissionsStoryBadlandsSanFiero" value="MissionsStoryBadlandsSanFiero">
-                        <label for="kMissionsStoryBadlandsSanFiero"><a href="#MissionsStoryBadlandsSanFiero">Badlands / San Fiero</a></label>
+                        <input type="checkbox" id="kMissionsStoryBadlandsSanFierro" name="kMissionsStoryBadlandsSanFierro" value="kMissionsStoryBadlandsSanFierro">
+                        <label for="kMissionsStoryBadlandsSanFierro"><a href="#kMissionsStoryBadlandsSanFierroChecklist">Badlands / San Fierro</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryDesertLasVenturas" name="kMissionsStoryDesertLasVenturas" value="MissionsStoryDesertLasVenturas">
-                        <label for="kMissionsStoryDesertLasVenturas"><a href="#MissionsStoryDesertLasVenturas">Desert / Las Venturas</a></label>
+                        <input type="checkbox" id="kMissionsStoryDesertLasVenturas" name="kMissionsStoryDesertLasVenturas" value="kMissionsStoryDesertLasVenturas">
+                        <label for="kMissionsStoryDesertLasVenturas"><a href="#kMissionsStoryDesertLasVenturasChecklist">Desert / Las Venturas</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryReturnToLosSantos" name="kMissionsStoryReturnToLosSantos" value="MissionsStoryReturnToLosSantos">
-                        <label for="kMissionsStoryReturnToLosSantos"><a href="#MissionsStoryReturnToLosSantos">Return to Los Santos</a></label>
+                        <input type="checkbox" id="kMissionsStoryReturnToLosSantos" name="kMissionsStoryReturnToLosSantos" value="kMissionsStoryReturnToLosSantos">
+                        <label for="kMissionsStoryReturnToLosSantos"><a href="#kMissionsStoryReturnToLosSantosChecklist">Return to Los Santos</a></label>
                     </li>
                 </ul>
             </div>
@@ -411,41 +411,177 @@
         <li>
             <div>
                 <a id="kChallengesVehicleChecklist">Vehicle Challenges</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesVehicleBMX" name="kChallengesVehicleBMX" value="kChallengesVehicleBMX">
+                        <label for="kChallengesVehicleBMX"><a href="#kChallengesVehicleBMXChecklist">BMX Challenge</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesVehicleNRG500" name="kChallengesVehicleNRG500" value="kChallengesVehicleNRG500">
+                        <label for="kChallengesVehicleNRG500"><a href="#kChallengesVehicleNRG500Checklist">NRG-500 Challenge</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesVehicleChilliad" name="kChallengesVehicleChilliad" value="kChallengesVehicleChilliad">
+                        <label for="kChallengesVehicleChilliad"><a href="#kChallengesVehicleChilliadChecklist">The Chilliad Challenge</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kCollectiblesVehicleChecklist">Vehicle Imports/Exports</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesVehicleList1" name="kCollectiblesVehicleList1" value="kCollectiblesVehicleList1">
+                        <label for="kCollectiblesVehicleList1"><a href="#kCollectiblesVehicleList1Checklist">Vehicle List 1</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesVehicleList2" name="kCollectiblesVehicleList2" value="kCollectiblesVehicleList2">
+                        <label for="kCollectiblesVehicleList2"><a href="#kCollectiblesVehicleList2Checklist">Vehicle List 2</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesVehicleList3" name="kCollectiblesVehicleList3" value="kCollectiblesVehicleList3">
+                        <label for="kCollectiblesVehicleList3"><a href="#kCollectiblesVehicleList3Checklist">Vehicle List 3</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kChallengesWeaponChecklist">Weapon Challenges</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesWeaponStage1" name="kChallengesWeaponStage1" value="kChallengesWeaponStage1">
+                        <label for="kChallengesWeaponStage1"><a href="#kChallengesWeaponStage1Checklist">Shooting Range - Stage 1 (Pistol)</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesWeaponStage2" name="kChallengesWeaponStage2" value="kChallengesWeaponStage2">
+                        <label for="kChallengesWeaponStage2"><a href="#kChallengesWeaponStage2Checklist">Shooting Range - Stage 2 (SMG)</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesWeaponStage3" name="kChallengesWeaponStage3" value="kChallengesWeaponStage3">
+                        <label for="kChallengesWeaponStage3"><a href="#kChallengesWeaponStage3Checklist">Shooting Range - Stage 3 (Shotgun)</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kChallengesWeaponStage4" name="kChallengesWeaponStage4" value="kChallengesWeaponStage4">
+                        <label for="kChallengesWeaponStage4"><a href="#kChallengesWeaponStage4Checklist">Shooting Range - Stage 4 (AK-47)</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kSchoolsChecklist">Schools</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kSchoolsDriving" name="kSchoolsDriving" value="kSchoolsDriving">
+                        <label for="kSchoolsDriving"><a href="#kSchoolsDrivingChecklist">Driving School</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kSchoolsBoat" name="kSchoolsBoat" value="kSchoolsBoat">
+                        <label for="kSchoolsBoat"><a href="#kSchoolsBoatChecklist">Boat School</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kSchoolsBike" name="kSchoolsBike" value="kSchoolsBike">
+                        <label for="kSchoolsBike"><a href="#kSchoolsBikeChecklist">Bike School</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kSchoolsFlight" name="kSchoolsFlight" value="kSchoolsFlight">
+                        <label for="kSchoolsFlight"><a href="#kSchoolsFlightChecklist">Flight School</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kStadiumEventsChecklist">Stadium Events</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kStadiumEvents8Track" name="kStadiumEvents8Track" value="kStadiumEvents8Track">
+                        <label for="kStadiumEvents8Track"><a href="#kStadiumEvents8TrackChecklist">8-Track</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kStadiumEventsBloodBowl" name="kStadiumEventsBloodBowl" value="kStadiumEventsBloodBowl">
+                        <label for="kStadiumEventsBloodBowl"><a href="#kStadiumEventsBloodBowlChecklist">Blood Bowl</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kStadiumEventsDirtTrack" name="kStadiumEventsDirtTrack" value="kStadiumEventsDirtTrack">
+                        <label for="kStadiumEventsDirtTrack"><a href="#kStadiumEventsDirtTrackChecklist">Dirt Track</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kStadiumEventsKickstart" name="kStadiumEventsKickstart" value="kStadiumEventsKickstart">
+                        <label for="kStadiumEventsKickstart"><a href="#kStadiumEventsKickstartChecklist">Kickstart</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kRaceTournamentsChecklist">Race Tournaments</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kRaceTournamentsLosSantosRaces" name="kRaceTournamentsLosSantosRaces" value="kRaceTournamentsLosSantosRaces">
+                        <label for="kRaceTournamentsLosSantosRaces"><a href="#kRaceTournamentsLosSantosRacesChecklist">Los Santos Race Tournaments</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kRaceTournamentsSanFierroRaces" name="kRaceTournamentsSanFierroRaces" value="kRaceTournamentsSanFierroRaces">
+                        <label for="kRaceTournamentsSanFierroRaces"><a href="#kRaceTournamentsSanFierroRacesChecklist">San Fierro Race Tournaments</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kRaceTournamentsLasVenturasRaces" name="kRaceTournamentsLasVenturasRaces" value="kRaceTournamentsLasVenturasRaces">
+                        <label for="kRaceTournamentsLasVenturasRaces"><a href="#kRaceTournamentsLasVenturasRacesChecklist">Las Venturas Freight Depot Race Tournaments</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kRaceTournamentsAirRaces" name="kRaceTournamentsAirRaces" value="kRaceTournamentsAirRaces">
+                        <label for="kRaceTournamentsAirRaces"><a href="#kRaceTournamentsAirRacesChecklist">Las Venturas Airpot Checkpoint Race Tournaments</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="kCollectiblesChecklist">Collectibles</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesSprayTags" name="kCollectiblesSprayTags" value="kCollectiblesSprayTags">
+                        <label for="kCollectiblesSprayTags"><a href="#kCollectiblesSprayTagsChecklist">Spray Tags</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesSnapshots" name="kCollectiblesSnapshots" value="kCollectiblesSnapshots">
+                        <label for="kCollectiblesSnapshots"><a href="#kCollectiblesSnapshotsChecklist">Snapshots</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesHorseshoes" name="kCollectiblesHorseshoes" value="kCollectiblesHorseshoes">
+                        <label for="kCollectiblesHorseshoes"><a href="#kCollectiblesHorseshoesChecklist">Horseshoes</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kCollectiblesOysters" name="kCollectiblesOysters" value="kCollectiblesOysters">
+                        <label for="kCollectiblesOysters"><a href="#kCollectiblesOystersChecklist">Oysters</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
         <li>
             <div>
                 <a id="PropertyPurchases">Property Purchases</a>
+                <ul>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesLosSantosRedCounty" name="kPropertyPurchasesLosSantosRedCounty" value="kPropertyPurchasesLosSantosRedCounty">
+                        <label for="kPropertyPurchasesLosSantosRedCounty"><a href="#kPropertyPurchasesLosSantosRedCountyChecklist">Los Santos / Red County</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesBadlandsSanFierro" name="kPropertyPurchasesBadlandsSanFierro" value="kPropertyPurchasesBadlandsSanFierro">
+                        <label for="kPropertyPurchasesBadlandsSanFierro"><a href="#kPropertyPurchasesBadlandsSanFierroChecklist">Badlands / San Fierro</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesDesertLasVenturas" name="kPropertyPurchasesDesertLasVenturas" value="kPropertyPurchasesDesertLasVenturas">
+                        <label for="kPropertyPurchasesDesertLasVenturas"><a href="#kPropertyPurchasesDesertLasVenturasChecklist">Desert / Las Venturas</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesReturnToLosSantos" name="kPropertyPurchasesReturnToLosSantos" value="kPropertyPurchasesReturnToLosSantos">
+                        <label for="kPropertyPurchasesReturnToLosSantos"><a href="#kPropertyPurchasesReturnToLosSantosChecklist">Return to Los Santos</a></label>
+                    </li>
+                </ul>
             </div>
         </li>
     </ul>
@@ -457,7 +593,7 @@
         <ul>
             <li>
                 <div>
-                    <a id="MissionsStoryLosSantosRedCounty">Los Santos / Red County</a>
+                    <a id="kMissionsStoryLosSantosRedCountyChecklist">Los Santos / Red County</a>
                     <ul>
                         <li>
                             <div>
@@ -613,7 +749,7 @@
             </li>
             <li>
                 <div>
-                    <a>Badlands / San Fiero</a>
+                    <a>Badlands / San Fierro</a>
                     <ul>
                         <li>The Truth (TT)</li>
                         <li>Catalina (C)</li>
@@ -660,7 +796,7 @@
             </li>
             <li class="CheckListItem">
                 <input type="checkbox" id="kMissionsCourierHippyShopper" name="kMissionsCourierHippyShopper" value="MissionsCourierHippyShopper">
-                <label for="kMissionsCourierHippyShopper">Hippy Shopper (San Fiero)</label>
+                <label for="kMissionsCourierHippyShopper">Hippy Shopper (San Fierro)</label>
             </li>
             <li class="CheckListItem">
                 <input type="checkbox" id="kMissionsCourierBurgerShot" name="kMissionsCourierBurgerShot" value="MissionsCourierBurgerShot">
