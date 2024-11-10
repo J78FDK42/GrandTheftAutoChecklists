@@ -299,15 +299,117 @@
 
         // -------------------------- Portland Story Missions -------------------------- //
         function UpdateStoryMissionsPortlandIslandChecklist () {
+            UpdateMissionsPortlandLuigiComplete();
+            UpdateMissionsPortlandJoeyComplete();
+            UpdateMissionsPortlandToniComplete();
+            UpdateMissionsPortlandElBurroComplete();
+            UpdateMissionsPortlandSalvatoreComplete();
+        }
+        function UpdateMissionsPortlandLuigiComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandLuigi");
+            var szChecked = localStorage.getItem("MissionsPortlandLuigi");
 
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsPortlandJoeyComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandJoey");
+            var szChecked = localStorage.getItem("MissionsPortlandJoey");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsPortlandToniComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandToni");
+            var szChecked = localStorage.getItem("MissionsPortlandToni");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsPortlandElBurroComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandElBurro");
+            var szChecked = localStorage.getItem("MissionsPortlandElBurro");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsPortlandSalvatoreComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandSalvatore");
+            var szChecked = localStorage.getItem("MissionsPortlandSalvatore");
+
+            kCheckbox.checked = szChecked === "true";
         }
         // -------------------------- Staunton Story Missions -------------------------- //
         function UpdateStoryMissionsStauntonIslandChecklist () {
+            UpdateMissionsStauntonAsukaComplete();
+            UpdateMissionsStauntonKenjiComplete();
+            UpdateMissionsStauntonRayComplete();
+            UpdateMissionsStauntonDonaldComplete();
+        }
+        function UpdateMissionsStauntonAsukaComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsuka");
+            var szChecked = localStorage.getItem("MissionsStauntonAsuka");
 
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenji");
+            var szChecked = localStorage.getItem("MissionsStauntonKenji");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonRayComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRay");
+            var szChecked = localStorage.getItem("MissionsStauntonRay");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonDonaldComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonald");
+            var szChecked = localStorage.getItem("MissionsStauntonDonald");
+
+            kCheckbox.checked = szChecked === "true";
         }
         // -------------------------- Shoreside Story Missions -------------------------- //
         function UpdateStoryMissionsShoresideValeChecklist () {
+            UpdateMissionsShoresideRayComplete();
+            UpdateMissionsShoresideDonaldComplete();
+            UpdateMissionsShoresideAsukaComplete();
+            UpdateMissionsShoresideDIceComplete();
+            UpdateMissionsShoresideKingComplete();
+            UpdateMissionsShoresideCatalinaComplete();
+        }
+        function UpdateMissionsShoresideRayComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideRay");
+            var szChecked = localStorage.getItem("MissionsShoresideRay");
 
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideDonaldComplete() {
+            var kCheckbox = document.getElementById("kMissionsShoresideDonald");
+            var szChecked = localStorage.getItem("MissionsShoresideDonald");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideAsukaComplete() {
+            var kCheckbox = document.getElementById("kMissionsShoresideAsuka");
+            var szChecked = localStorage.getItem("MissionsShoresideAsuka");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideDIceComplete() {
+            var kCheckbox = document.getElementById("kMissionsShoresideDIce");
+            var szChecked = localStorage.getItem("MissionsShoresideDIce");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideKingComplete() {
+            var kCheckbox = document.getElementById("kMissionsShoresideKing");
+            var szChecked = localStorage.getItem("MissionsShoresideKing");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideCatalinaComplete() {
+            var kCheckbox = document.getElementById("kMissionsShoresideCatalina");
+            var szChecked = localStorage.getItem("MissionsShoresideCatalina");
+
+            kCheckbox.checked = szChecked === "true";
         }
 
         // -------------------------- Vehicle Missions -------------------------- //
@@ -1215,6 +1317,72 @@
 
         // -------------------------- Detailed Missions -------------------------- //
 
+        // -------------------------- Story Missions -------------------------- //
+
+        // -------------------------- Portland Story Missions -------------------------- //
+        function SaveMissionsPortlandLuigiComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandLuigi");
+            localStorage.setItem("MissionsPortlandLuigi", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsPortlandJoeyComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandJoey");
+            localStorage.setItem("MissionsPortlandJoey", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsPortlandToniComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandToni");
+            localStorage.setItem("MissionsPortlandToni", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsPortlandElBurroComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandElBurro");
+            localStorage.setItem("MissionsPortlandElBurro", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsPortlandSalvatoreComplete () {
+            var kCheckbox = document.getElementById("kMissionsPortlandSalvatore");
+            localStorage.setItem("MissionsPortlandSalvatore", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Staunton Story Missions -------------------------- //
+        function SaveMissionsStauntonAsukaComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsuka");
+            localStorage.setItem("MissionsStauntonAsuka", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenji");
+            localStorage.setItem("MissionsStauntonKenji", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonRayComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRay");
+            localStorage.setItem("MissionsStauntonRay", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonDonaldComplete () {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonald");
+            localStorage.setItem("MissionsStauntonDonald", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Shoreside Story Missions -------------------------- //
+        function SaveMissionsShoresideRayComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideRay");
+            localStorage.setItem("MissionsShoresideRay", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsShoresideDonaldComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideDonald");
+            localStorage.setItem("MissionsShoresideDonald", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsShoresideAsukaComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideAsuka");
+            localStorage.setItem("MissionsShoresideAsuka", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsShoresideDIceComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideDIce");
+            localStorage.setItem("MissionsShoresideDIce", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsShoresideKingComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideKing");
+            localStorage.setItem("MissionsShoresideKing", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsShoresideCatalinaComplete () {
+            var kCheckbox = document.getElementById("kMissionsShoresideCatalina");
+            localStorage.setItem("MissionsShoresideCatalina", kCheckbox.checked ? "true" : "false");
+        }
+
         // -------------------------- Vigilante Mission -------------------------- //
         function SaveVehicleMissionsVigilanteBribe1Complete () {
             var kCheckbox = document.getElementById("kMissionsVehicleVigilanteBribe1");
@@ -1824,69 +1992,69 @@
     <h3 class="MissionCategory"><a id="MissionsStoryPortlandIsland">Portland Island</a></h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsPortlandLuigi" name="kMissionsPortlandLuigi" value="MissionsPortlandLuigi">
+            <input type="checkbox" id="kMissionsPortlandLuigi" name="kMissionsPortlandLuigi" value="MissionsPortlandLuigi" onchange="SaveMissionsPortlandLuigiComplete()">
             <label for="kMissionsPortlandLuigi"><a href="#MissionsPortlandLuigi">Luigi Goterelli</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsPortlandJoey" name="kMissionsPortlandJoey" value="MissionsPortlandJoey">
+            <input type="checkbox" id="kMissionsPortlandJoey" name="kMissionsPortlandJoey" value="MissionsPortlandJoey" onchange="SaveMissionsPortlandJoeyComplete()">
             <label for="kMissionsPortlandJoey"><a href="#MissionsPortlandJoey">Joey Leone</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsPortlandToni" name="kMissionsPortlandToni" value="MissionsPortlandToni">
+            <input type="checkbox" id="kMissionsPortlandToni" name="kMissionsPortlandToni" value="MissionsPortlandToni" onchange="SaveMissionsPortlandToniComplete()">
             <label for="kMissionsPortlandToni"><a href="#MissionsPortlandToni">Toni Cipriani</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsPortlandElBurro" name="kMissionsPortlandElBurro" value="MissionsPortlandElBurro">
+            <input type="checkbox" id="kMissionsPortlandElBurro" name="kMissionsPortlandElBurro" value="MissionsPortlandElBurro" onchange="SaveMissionsPortlandElBurroComplete()">
             <label for="kMissionsPortlandElBurro"><a href="#MissionsPortlandElBurro">El Burro</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsPortlandSalvatore" name="kMissionsPortlandSalvatore" value="MissionsPortlandSalvatore">
+            <input type="checkbox" id="kMissionsPortlandSalvatore" name="kMissionsPortlandSalvatore" value="MissionsPortlandSalvatore" onchange="SaveMissionsPortlandSalvatoreComplete()">
             <label for="kMissionsPortlandSalvatore"><a href="#MissionsPortlandSalvatore">Salvatore Leone</a></label>
         </li>
     </ul>
     <h3 class="MissionCategory"><a id="MissionsStoryStauntonIsland">Staunton Island</a></h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsStauntonAsuka" name="kMissionsStauntonAsuka" value="MissionsStauntonAsuka">
+            <input type="checkbox" id="kMissionsStauntonAsuka" name="kMissionsStauntonAsuka" value="MissionsStauntonAsuka" onchange="SaveMissionsStauntonAsukaComplete()">
             <label for="kMissionsStauntonAsuka"><a href="#MissionsStauntonAsuka">Asuka Kasen</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsStauntonKenji" name="kMissionsStauntonKenji" value="MissionsStauntonKenji">
+            <input type="checkbox" id="kMissionsStauntonKenji" name="kMissionsStauntonKenji" value="MissionsStauntonKenji" onchange="SaveMissionsStauntonKenjiComplete()">
             <label for="kMissionsStauntonKenji"><a href="#MissionsStauntonKenji">Kenji Kasen</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsStauntonRay" name="kMissionsStauntonRay" value="MissionsStauntonRay">
+            <input type="checkbox" id="kMissionsStauntonRay" name="kMissionsStauntonRay" value="MissionsStauntonRay" onchange="SaveMissionsStauntonRayComplete()">
             <label for="kMissionsStauntonRay"><a href="#MissionsStauntonRay">Ray Machowski</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsStauntonDonald" name="kMissionsStauntonDonald" value="MissionsStauntonDonald">
+            <input type="checkbox" id="kMissionsStauntonDonald" name="kMissionsStauntonDonald" value="MissionsStauntonDonald" onchange="SaveMissionsStauntonDonaldComplete()">
             <label for="kMissionsStauntonDonald"><a href="#MissionsStauntonDonald">Donald Love</a></label>
         </li>
     </ul>
     <h3 class="MissionCategory"><a id="MissionsStoryShoresideVale">Shoreside Vale</a></h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideRay" name="kMissionsShoresideRay" value="MissionsShoresideRay">
+            <input type="checkbox" id="kMissionsShoresideRay" name="kMissionsShoresideRay" value="MissionsShoresideRay" onchange="SaveMissionsShoresideRayComplete()">
             <label for="kMissionsShoresideRay"><a href="#MissionsShoresideRay">Ray Machowski</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideDonald" name="kMissionsShoresideDonald" value="MissionsShoresideDonald">
+            <input type="checkbox" id="kMissionsShoresideDonald" name="kMissionsShoresideDonald" value="MissionsShoresideDonald" onchange="SaveMissionsShoresideDonaldComplete()">
             <label for="kMissionsShoresideDonald"><a href="#MissionsShoresideDonald">Donald Love</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideAsuka" name="kMissionsShoresideAsuka" value="MissionsShoresideAsuka">
+            <input type="checkbox" id="kMissionsShoresideAsuka" name="kMissionsShoresideAsuka" value="MissionsShoresideAsuka" onchange="SaveMissionsShoresideAsukaComplete()">
             <label for="kMissionsShoresideAsuka"><a href="#MissionsShoresideAsuka">Asuka Kasen</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideDIce" name="kMissionsShoresideDIce" value="MissionsShoresideDIce">
+            <input type="checkbox" id="kMissionsShoresideDIce" name="kMissionsShoresideDIce" value="MissionsShoresideDIce" onchange="SaveMissionsShoresideDIceComplete()">
             <label for="kMissionsShoresideDIce"><a href="#MissionsShoresideDIce">D-Ice</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideKing" name="kMissionsShoresideKing" value="MissionsShoresideKing">
+            <input type="checkbox" id="kMissionsShoresideKing" name="kMissionsShoresideKing" value="MissionsShoresideKing" onchange="SaveMissionsShoresideKingComplete()">
             <label for="kMissionsShoresideKing"><a href="#MissionsShoresideKing">King Courtney</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideCatalina" name="kMissionsShoresideCatalina" value="MissionsShoresideCatalina">
+            <input type="checkbox" id="kMissionsShoresideCatalina" name="kMissionsShoresideCatalina" value="MissionsShoresideCatalina" onchange="SaveMissionsShoresideCatalinaComplete()">
             <label for="kMissionsShoresideCatalina"><a href="#MissionsShoresideCatalina">Catalina</a></label>
         </li>
     </ul>
