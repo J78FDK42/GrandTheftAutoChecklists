@@ -720,6 +720,7 @@
             UpdateMissionsShoresideAsukaMission1();
             UpdateMissionsShoresideAsukaMission2();
             UpdateMissionsShoresideAsukaMission3();
+            UpdateMissionsShoresideAsukaMission4();
             // D-Ice
             UpdateMissionsShoresideDIceMission1();
             UpdateMissionsShoresideDIceMission2();
@@ -791,6 +792,12 @@
         function UpdateMissionsShoresideAsukaMission3 () {
             var kCheckbox = document.getElementById("kMissionsShoresideAsukaMission3");
             var szChecked = localStorage.getItem("MissionsShoresideAsukaMission3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsShoresideAsukaMission4 () {
+            var kCheckbox = document.getElementById("kMissionsShoresideAsukaMission4");
+            var szChecked = localStorage.getItem("MissionsShoresideAsukaMission4");
 
             kCheckbox.checked = szChecked === "true";
         }
@@ -2026,6 +2033,10 @@
             var kCheckbox = document.getElementById("kMissionsShoresideAsukaMission3");
             localStorage.setItem("MissionsShoresideAsukaMission3", kCheckbox.checked ? "true" : "false");
         }
+        function SaveMissionsShoresideAsukaMission4 () {
+            var kCheckbox = document.getElementById("kMissionsShoresideAsukaMission4");
+            localStorage.setItem("MissionsShoresideAsukaMission4", kCheckbox.checked ? "true" : "false");
+        }
         function SaveMissionsShoresideDIceMission1 () {
             var kCheckbox = document.getElementById("kMissionsShoresideDIceMission1");
             localStorage.setItem("MissionsShoresideDIceMission1", kCheckbox.checked ? "true" : "false");
@@ -2722,12 +2733,12 @@
             <label for="kMissionsShoresideRay"><a href="#MissionsShoresideRay">Ray Machowski</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsShoresideDonald" name="kMissionsShoresideDonald" value="MissionsShoresideDonald" onchange="SaveMissionsShoresideDonaldComplete()">
-            <label for="kMissionsShoresideDonald"><a href="#MissionsShoresideDonald">Donald Love</a></label>
-        </li>
-        <li class="CheckListItem">
             <input type="checkbox" id="kMissionsShoresideAsuka" name="kMissionsShoresideAsuka" value="MissionsShoresideAsuka" onchange="SaveMissionsShoresideAsukaComplete()">
             <label for="kMissionsShoresideAsuka"><a href="#MissionsShoresideAsuka">Asuka Kasen</a></label>
+        </li>
+        <li class="CheckListItem">
+            <input type="checkbox" id="kMissionsShoresideDonald" name="kMissionsShoresideDonald" value="MissionsShoresideDonald" onchange="SaveMissionsShoresideDonaldComplete()">
+            <label for="kMissionsShoresideDonald"><a href="#MissionsShoresideDonald">Donald Love</a></label>
         </li>
         <li class="CheckListItem">
             <input type="checkbox" id="kMissionsShoresideDIce" name="kMissionsShoresideDIce" value="MissionsShoresideDIce" onchange="SaveMissionsShoresideDIceComplete()">
@@ -2973,6 +2984,27 @@
         </ul>
     </div>
     <div>
+        <h3 class="MissionCategory"><a id="MissionsShoresideAsuka">Asuka Kasen</a></h3>
+        <ul>
+            <li class="CheckListItem">
+                <input type="checkbox" id="kMissionsShoresideAsukaMission1" name="kMissionsShoresideAsukaMission1" value="kMissionsShoresideAsukaMission1" onchange="SaveMissionsShoresideAsukaMission1()">
+                <label for="kMissionsShoresideAsukaMission1">Two-Faced Tanner</label>
+            </li>
+            <li class="CheckListItem">
+                <input type="checkbox" id="kMissionsShoresideAsukaMission2" name="kMissionsShoresideAsukaMission2" value="kMissionsShoresideAsukaMission2" onchange="SaveMissionsShoresideAsukaMission2()">
+                <label for="kMissionsShoresideAsukaMission2">Bait</label>
+            </li>
+            <li class="CheckListItem">
+                <input type="checkbox" id="kMissionsShoresideAsukaMission3" name="kMissionsShoresideAsukaMission3" value="kMissionsShoresideAsukaMission3" onchange="SaveMissionsShoresideAsukaMission3()">
+                <label for="kMissionsShoresideAsukaMission3">Espresso-2-Go!</label>
+            </li>
+            <li class="CheckListItem">
+                <input type="checkbox" id="kMissionsShoresideAsukaMission4" name="kMissionsShoresideAsukaMission4" value="kMissionsShoresideAsukaMission4" onchange="SaveMissionsShoresideAsukaMission4()">
+                <label for="kMissionsShoresideAsukaMission4">S.A.M.</label>
+            </li>
+        </ul>
+    </div>
+    <div>
         <h3 class="MissionCategory"><a id="MissionsShoresideDonald">Donald Love</a></h3>
         <ul>
             <li class="CheckListItem">
@@ -2990,23 +3022,6 @@
             <li class="CheckListItem">
                 <input type="checkbox" id="kMissionsShoresideDonaldMission4" name="kMissionsShoresideDonaldMission4" value="kMissionsShoresideDonaldMission4" onchange="SaveMissionsShoresideDonaldMission4()">
                 <label for="kMissionsShoresideDonaldMission4">Love's Disappearance</label>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h3 class="MissionCategory"><a id="MissionsShoresideAsuka">Asuka Kasen</a></h3>
-        <ul>
-            <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsShoresideAsukaMission1" name="kMissionsShoresideAsukaMission1" value="kMissionsShoresideAsukaMission1" onchange="SaveMissionsShoresideAsukaMission1()">
-                <label for="kMissionsShoresideAsukaMission1">Bait</label>
-            </li>
-            <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsShoresideAsukaMission2" name="kMissionsShoresideAsukaMission2" value="kMissionsShoresideAsukaMission2" onchange="SaveMissionsShoresideAsukaMission2()">
-                <label for="kMissionsShoresideAsukaMission2">Espresso-2-Go!</label>
-            </li>
-            <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsShoresideAsukaMission3" name="kMissionsShoresideAsukaMission3" value="kMissionsShoresideAsukaMission3" onchange="SaveMissionsShoresideAsukaMission3()">
-                <label for="kMissionsShoresideAsukaMission3">S.A.M.</label>
             </li>
         </ul>
     </div>
@@ -3153,6 +3168,8 @@
         <h4 class="MissionReward">Reward</h4>
         <span>100 Fares Completed - Unlocks Borgnine Cab in Harwood</span>
     </div>
+    <br />
+    <h4 class="MissionReward">Optional Bonuses</h4>
     <ul>
         <li class="CheckListItem">
             <input type="checkbox" id="kMissionsVehicleTaxiBonus10" name="kMissionsVehicleTaxiBonus10" value="MissionsVehicleTaxiBonus10">
