@@ -36,6 +36,8 @@
             UpdateChecklist();
             UpdateDetailedChecklist();
             UpdateDetailedMissions();
+            UpdateDetailedCollectibles();
+            UpdateCharacterMissions();
         }
         function UpdateChecklist () {
             UpdateStoryMissionsComplete();
@@ -55,6 +57,9 @@
         }
         function UpdateDetailedMissions () {
             // Story Missions
+            UpdateStoryMissionsPortlandIslandChecklist();
+            UpdateStoryMissionsStauntonIslandChecklist();
+            UpdateStoryMissionsShoresideValeChecklist();
             // Off-Road Missions
             // RC Missions
             // Vehicle Missions
@@ -67,6 +72,19 @@
             UpdateVehicleCollectiblesShoresideGarageChecklist();
             // Collectibles
             UpdateCollectiblesHiddenPackagesChecklist();
+            UpdateCollectiblesRampagesChecklist();
+            UpdateCollectiblesUniqueJumpsChecklist();
+        }
+        function UpdateDetailedCollectibles () {
+            // Rampage Missions
+            UpdateDetailedRampagesChecklist();
+            // Unique Jumps
+            UpdateDetailedUniqueJumpsChecklist();
+        }
+        function UpdateCharacterMissions () {
+            // Portland Missions
+            // Staunton Missions
+            // Shoreside Missions
         }
 
         // -------------------------- Update Methods -------------------------- //
@@ -276,7 +294,26 @@
         }
 
         // -------------------------- Detailed Missions -------------------------- //
-        function UpdateVehicleMissionsVigilanteChecklist () {
+
+        // -------------------------- Story Missions -------------------------- //
+
+        // -------------------------- Portland Story Missions -------------------------- //
+        function UpdateStoryMissionsPortlandIslandChecklist () {
+
+        }
+        // -------------------------- Staunton Story Missions -------------------------- //
+        function UpdateStoryMissionsStauntonIslandChecklist () {
+
+        }
+        // -------------------------- Shoreside Story Missions -------------------------- //
+        function UpdateStoryMissionsShoresideValeChecklist () {
+
+        }
+
+        // -------------------------- Vehicle Missions -------------------------- //
+
+        // -------------------------- Vigilante Missions -------------------------- //
+        function UpdateVehicleMissionsVigilanteChecklist() {
             UpdateVehicleMissionsVigilanteBribe1Complete();
             UpdateVehicleMissionsVigilanteBribe2Complete();
             UpdateVehicleMissionsVigilanteBribe3Complete();
@@ -720,6 +757,209 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Rampages -------------------------- //
+        function UpdateCollectiblesRampagesChecklist () {
+            UpdateCollectiblesRampagesPortlandComplete();
+            UpdateCollectiblesRampagesStauntonComplete();
+            UpdateCollectiblesRampagesShoresideComplete();
+        }
+        function UpdateCollectiblesRampagesPortlandComplete () {
+            var kCheckbox = document.getElementById("kRampagesPortland");
+            var szChecked = localStorage.getItem("RampagesPortland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesRampagesStauntonComplete () {
+            var kCheckbox = document.getElementById("kRampagesStaunton");
+            var szChecked = localStorage.getItem("RampagesStaunton");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesRampagesShoresideComplete () {
+            var kCheckbox = document.getElementById("kRampagesShoreside");
+            var szChecked = localStorage.getItem("RampagesShoreside");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Unique Jumps -------------------------- //
+        function UpdateCollectiblesUniqueJumpsChecklist () {
+            UpdateCollectiblesUniqueJumpsPortlandComplete();
+            UpdateCollectiblesUniqueJumpsStauntonComplete();
+            UpdateCollectiblesUniqueJumpsShoresideComplete();
+        }
+        function UpdateCollectiblesUniqueJumpsPortlandComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsPortland");
+            var szChecked = localStorage.getItem("UniqueJumpsPortland");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesUniqueJumpsStauntonComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsStaunton");
+            var szChecked = localStorage.getItem("UniqueJumpsStaunton");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesUniqueJumpsShoresideComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsShoreside");
+            var szChecked = localStorage.getItem("UniqueJumpsShoreside");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Collectibles -------------------------- //
+
+        // -------------------------- Detailed Rampages -------------------------- //
+        function UpdateDetailedRampagesChecklist () {
+            UpdateDetailedRampage1Complete();
+            UpdateDetailedRampage2Complete();
+            UpdateDetailedRampage3Complete();
+            UpdateDetailedRampage4Complete();
+            UpdateDetailedRampage5Complete();
+            UpdateDetailedRampage6Complete();
+            UpdateDetailedRampage7Complete();
+            UpdateDetailedRampage8Complete();
+            UpdateDetailedRampage9Complete();
+            UpdateDetailedRampage10Complete();
+            UpdateDetailedRampage11Complete();
+            UpdateDetailedRampage12Complete();
+            UpdateDetailedRampage13Complete();
+            UpdateDetailedRampage14Complete();
+            UpdateDetailedRampage15Complete();
+            UpdateDetailedRampage16Complete();
+            UpdateDetailedRampage17Complete();
+            UpdateDetailedRampage18Complete();
+            UpdateDetailedRampage19Complete();
+            UpdateDetailedRampage20Complete();
+        }
+        function UpdateDetailedRampage1Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon1");
+            var szChecked = localStorage.getItem("RampageWeapon1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage2Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon2");
+            var szChecked = localStorage.getItem("RampageWeapon2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage3Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon3");
+            var szChecked = localStorage.getItem("RampageWeapon3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage4Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon4");
+            var szChecked = localStorage.getItem("RampageWeapon4");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage5Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon5");
+            var szChecked = localStorage.getItem("RampageWeapon5");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage6Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon6");
+            var szChecked = localStorage.getItem("RampageWeapon6");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage7Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon7");
+            var szChecked = localStorage.getItem("RampageWeapon7");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage8Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon8");
+            var szChecked = localStorage.getItem("RampageWeapon8");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage9Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon9");
+            var szChecked = localStorage.getItem("RampageWeapon9");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage10Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon10");
+            var szChecked = localStorage.getItem("RampageWeapon10");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage11Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon11");
+            var szChecked = localStorage.getItem("RampageWeapon11");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage12Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon12");
+            var szChecked = localStorage.getItem("RampageWeapon12");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage13Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon13");
+            var szChecked = localStorage.getItem("RampageWeapon13");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage14Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon14");
+            var szChecked = localStorage.getItem("RampageWeapon14");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage15Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon15");
+            var szChecked = localStorage.getItem("RampageWeapon15");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage16Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon16");
+            var szChecked = localStorage.getItem("RampageWeapon16");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage17Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon17");
+            var szChecked = localStorage.getItem("RampageWeapon17");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage18Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon18");
+            var szChecked = localStorage.getItem("RampageWeapon18");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage19Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon19");
+            var szChecked = localStorage.getItem("RampageWeapon19");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateDetailedRampage20Complete() {
+            var kCheckbox = document.getElementById("kRampageWeapon20");
+            var szChecked = localStorage.getItem("RampageWeapon20");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Unique Jumps -------------------------- //
+        function UpdateDetailedUniqueJumpsChecklist () {
+            UpdateDetailedUniqueJump1Complete();
+        }
+        function UpdateDetailedUniqueJump1Complete () {
+            var kCheckbox = document.getElementById("kUniqueJumps1");
+            var szChecked = localStorage.getItem("UniqueJumps1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Save Methods -------------------------- //
 
@@ -1092,6 +1332,115 @@
         function SaveCollectiblesHiddenPackagesWeapon10Complete () {
             var kCheckbox = document.getElementById("kHiddenPackages100");
             localStorage.setItem("HiddenPackages100", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Rampages -------------------------- //
+        function SaveCollectiblesRampagesPortlandComplete () {
+            var kCheckbox = document.getElementById("kRampagesPortland");
+            localStorage.setItem("RampagesPortland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesRampagesStauntonComplete () {
+            var kCheckbox = document.getElementById("kRampagesStaunton");
+            localStorage.setItem("RampagesStaunton", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesRampagesShoresideComplete () {
+            var kCheckbox = document.getElementById("kRampagesShoreside");
+            localStorage.setItem("RampagesShoreside", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Unique Jumps -------------------------- //
+        function SaveCollectiblesUniqueJumpsPortlandComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsPortland");
+            localStorage.setItem("UniqueJumpsPortland", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesUniqueJumpsStauntonComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsStaunton");
+            localStorage.setItem("UniqueJumpsStaunton", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesUniqueJumpsShoresideComplete () {
+            var kCheckbox = document.getElementById("kUniqueJumpsShoreside");
+            localStorage.setItem("UniqueJumpsShoreside", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Collectibles -------------------------- //
+
+        // -------------------------- Detailed Rampages -------------------------- //
+        function SaveDetailedRampage1Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon1");
+            localStorage.setItem("RampageWeapon1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage2Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon2");
+            localStorage.setItem("RampageWeapon2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage3Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon3");
+            localStorage.setItem("RampageWeapon3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage4Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon4");
+            localStorage.setItem("RampageWeapon4", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage5Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon5");
+            localStorage.setItem("RampageWeapon5", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage6Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon6");
+            localStorage.setItem("RampageWeapon6", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage7Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon7");
+            localStorage.setItem("RampageWeapon7", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage8Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon8");
+            localStorage.setItem("RampageWeapon8", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage9Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon9");
+            localStorage.setItem("RampageWeapon9", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage10Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon10");
+            localStorage.setItem("RampageWeapon10", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage11Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon11");
+            localStorage.setItem("RampageWeapon11", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage12Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon12");
+            localStorage.setItem("RampageWeapon12", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage13Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon13");
+            localStorage.setItem("RampageWeapon13", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage14Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon14");
+            localStorage.setItem("RampageWeapon14", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage15Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon15");
+            localStorage.setItem("RampageWeapon15", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage16Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon16");
+            localStorage.setItem("RampageWeapon16", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage17Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon17");
+            localStorage.setItem("RampageWeapon17", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage18Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon18");
+            localStorage.setItem("RampageWeapon18", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage19Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon19");
+            localStorage.setItem("RampageWeapon19", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveDetailedRampage20Complete () {
+            var kCheckbox = document.getElementById("kRampageWeapon20");
+            localStorage.setItem("RampageWeapon20", kCheckbox.checked ? "true" : "false");
         }
     </script>
 </head>
@@ -1986,15 +2335,15 @@
     <h3 class="MissionCategory"><a id="CollectiblesRampages">Rampages</a></h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampagesPortland" name="kRampagesPortland" value="RampagesPortland" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kRampagesPortland" name="kRampagesPortland" value="RampagesPortland" onchange="SaveCollectiblesRampagesPortlandComplete()">
             <label for="kRampagesPortland"><a href="#RampagesPortlandChecklist">Portland Island</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampagesStaunton" name="kRampagesStaunton" value="RampagesStaunton" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kRampagesStaunton" name="kRampagesStaunton" value="RampagesStaunton" onchange="SaveCollectiblesRampagesStauntonComplete()">
             <label for="kRampagesStaunton"><a href="#RampagesStauntonChecklist">Staunton Island</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampagesShoreside" name="kRampagesShoreside" value="RampagesShoreside" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kRampagesShoreside" name="kRampagesShoreside" value="RampagesShoreside" onchange="SaveCollectiblesRampagesShoresideComplete()">
             <label for="kRampagesShoreside"><a href="#RampagesShoresideChecklist">Shoreside Vale</a></label>
         </li>
     </ul>
@@ -2003,15 +2352,15 @@
     <h3 class="MissionCategory"><a id="CollectiblesUniqueJumps">Unique Jumps</a></h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kUniqueJumpsPortland" name="kUniqueJumpsPortland" value="UniqueJumpsPortland" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kUniqueJumpsPortland" name="kUniqueJumpsPortland" value="UniqueJumpsPortland" onchange="SaveCollectiblesUniqueJumpsPortlandComplete()">
             <label for="kUniqueJumpsPortland"><a href="#UniqueJumpsPortlandChecklist">Portland Island</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kUniqueJumpsStaunton" name="kUniqueJumpsStaunton" value="UniqueJumpsStaunton" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kUniqueJumpsStaunton" name="kUniqueJumpsStaunton" value="UniqueJumpsStaunton" onchange="SaveCollectiblesUniqueJumpsStauntonComplete()">
             <label for="kUniqueJumpsStaunton"><a href="#UniqueJumpsStauntonChecklist">Staunton Island</a></label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kUniqueJumpsShoreside" name="kUniqueJumpsShoreside" value="UniqueJumpsShoreside" onchange="SaveCollectiblesHiddenPackagesWeapon10Complete()">
+            <input type="checkbox" id="kUniqueJumpsShoreside" name="kUniqueJumpsShoreside" value="UniqueJumpsShoreside" onchange="SaveCollectiblesUniqueJumpsShoresideComplete()">
             <label for="kUniqueJumpsShoreside"><a href="#UniqueJumpsShoresideChecklist">Shoreside Vale</a></label>
         </li>
     </ul>
@@ -2027,27 +2376,27 @@
     <h3 id="RampagesPortlandChecklist">Portland Island</h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon1" name="kRampageWeapon1" value="RampageWeapon1">
+            <input type="checkbox" id="kRampageWeapon1" name="kRampageWeapon1" value="RampageWeapon1" onchange="SaveDetailedRampage1Complete()">
             <label for="kRampageWeapon1">Rampage #1 - Kill 20 Mafia (AK-47)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon2" name="kRampageWeapon2" value="RampageWeapon2">
+            <input type="checkbox" id="kRampageWeapon2" name="kRampageWeapon2" value="RampageWeapon2" onchange="SaveDetailedRampage2Complete()">
             <label for="kRampageWeapon2">Rampage #2 - Murder 30 Diablos (M-16)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon3" name="kRampageWeapon3" value="RampageWeapon3">
+            <input type="checkbox" id="kRampageWeapon3" name="kRampageWeapon3" value="RampageWeapon3" onchange="SaveDetailedRampage3Complete()">
             <label for="kRampageWeapon3">Rampage #3 - Destroy 10 Vehicles (Grenades)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon4" name="kRampageWeapon4" value="RampageWeapon4">
+            <input type="checkbox" id="kRampageWeapon4" name="kRampageWeapon4" value="RampageWeapon4" onchange="SaveDetailedRampage4Complete()">
             <label for="kRampageWeapon4">Rampage #4 - Kill 20 Triads (Shotgun)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon5" name="kRampageWeapon5" value="RampageWeapon5">
+            <input type="checkbox" id="kRampageWeapon5" name="kRampageWeapon5" value="RampageWeapon5" onchange="SaveDetailedRampage5Complete()">
             <label for="kRampageWeapon5">Rampage #5 - Kill 25 Triads (Uz-I)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon6" name="kRampageWeapon6" value="RampageWeapon6">
+            <input type="checkbox" id="kRampageWeapon6" name="kRampageWeapon6" value="RampageWeapon6" onchange="SaveDetailedRampage6Complete()">
             <label for="kRampageWeapon6">Rampage #6 - Destroy 13 Vehicles (Rocket Launcher)</label>
         </li>
     </ul>
@@ -2056,31 +2405,31 @@
     <h3 id="RampagesStauntonChecklist">Staunton Island</h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon7" name="kRampageWeapon7" value="RampageWeapon7">
+            <input type="checkbox" id="kRampageWeapon7" name="kRampageWeapon7" value="RampageWeapon7" onchange="SaveDetailedRampage7Complete()">
             <label for="kRampageWeapon7">Rampage #7 - Destroy 15 Vehicles (M-16)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon8" name="kRampageWeapon8" value="RampageWeapon8">
+            <input type="checkbox" id="kRampageWeapon8" name="kRampageWeapon8" value="RampageWeapon8" onchange="SaveDetailedRampage8Complete()">
             <label for="kRampageWeapon8">Rampage #8 - Explode 25 Yardies (Grenades)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon9" name="kRampageWeapon9" value="RampageWeapon9">
+            <input type="checkbox" id="kRampageWeapon9" name="kRampageWeapon9" value="RampageWeapon9" onchange="SaveDetailedRampage9Complete()">
             <label for="kRampageWeapon9">Rampage #9 - Torch 16 Yakuza (Molotovs)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon10" name="kRampageWeapon10" value="RampageWeapon10">
+            <input type="checkbox" id="kRampageWeapon10" name="kRampageWeapon10" value="RampageWeapon10" onchange="SaveDetailedRampage10Complete()">
             <label for="kRampageWeapon10">Rampage #10 - Destroy 8 Vehicles (Shotgun)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon11" name="kRampageWeapon11" value="RampageWeapon11">
+            <input type="checkbox" id="kRampageWeapon11" name="kRampageWeapon11" value="RampageWeapon11" onchange="SaveDetailedRampage11Complete()">
             <label for="kRampageWeapon11">Rampage #11 - Annihilate 30 Yardies (Rocket Launcher)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon12" name="kRampageWeapon12" value="RampageWeapon12">
+            <input type="checkbox" id="kRampageWeapon12" name="kRampageWeapon12" value="RampageWeapon12" onchange="SaveDetailedRampage12Complete()">
             <label for="kRampageWeapon12">Rampage #12 - Pop 17 Yardie Heads (Sniper Rifle)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon13" name="kRampageWeapon13" value="RampageWeapon13">
+            <input type="checkbox" id="kRampageWeapon13" name="kRampageWeapon13" value="RampageWeapon13" onchange="SaveDetailedRampage13Complete()">
             <label for="kRampageWeapon13">Rampage #13 - Burn 25 Yakuza (Flamethrower)</label>
         </li>
     </ul>
@@ -2089,31 +2438,31 @@
     <h3 id="RampagesShoresideChecklist">Shoreside Vale</h3>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon14" name="kRampageWeapon14" value="RampageWeapon14">
+            <input type="checkbox" id="kRampageWeapon14" name="kRampageWeapon14" value="RampageWeapon14" onchange="SaveDetailedRampage14Complete()">
             <label for="kRampageWeapon14">Rampage #14 - Fry 20 Columbians (Flamethrower)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon15" name="kRampageWeapon15" value="RampageWeapon15">
+            <input type="checkbox" id="kRampageWeapon15" name="kRampageWeapon15" value="RampageWeapon15" onchange="SaveDetailedRampage15Complete()">
             <label for="kRampageWeapon15">Rampage #15 - Behead 20 Hoods (M-16)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon16" name="kRampageWeapon16" value="RampageWeapon16">
+            <input type="checkbox" id="kRampageWeapon16" name="kRampageWeapon16" value="RampageWeapon16" onchange="SaveDetailedRampage16Complete()">
             <label for="kRampageWeapon16">Rampage #16 - Splatter 20 Hoods (Shotgun)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon17" name="kRampageWeapon17" value="RampageWeapon17">
+            <input type="checkbox" id="kRampageWeapon17" name="kRampageWeapon17" value="RampageWeapon17" onchange="SaveDetailedRampage17Complete()">
             <label for="kRampageWeapon17">Rampage #17 - Behead 15 Columbians (Sniper Rifle)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon18" name="kRampageWeapon18" value="RampageWeapon18">
+            <input type="checkbox" id="kRampageWeapon18" name="kRampageWeapon18" value="RampageWeapon18" onchange="SaveDetailedRampage18Complete()">
             <label for="kRampageWeapon18">Rampage #18 - Destroy 15 Vehicles (Rocket Launcher)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon19" name="kRampageWeapon19" value="RampageWeapon19">
+            <input type="checkbox" id="kRampageWeapon19" name="kRampageWeapon19" value="RampageWeapon19" onchange="SaveDetailedRampage19Complete()">
             <label for="kRampageWeapon19">Rampage #19 - Drive-by and Destroy 7 Vehicles (Uz-I)</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kRampageWeapon20" name="kRampageWeapon20" value="RampageWeapon20">
+            <input type="checkbox" id="kRampageWeapon20" name="kRampageWeapon20" value="RampageWeapon20" onchange="SaveDetailedRampage20Complete()">
             <label for="kRampageWeapon20">Rampage #20 - Splatter 20 Columbians (Any Vehicle)</label>
         </li>
     </ul>
