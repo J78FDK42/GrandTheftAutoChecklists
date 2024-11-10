@@ -596,9 +596,114 @@
         // -------------------------- Staunton Missions -------------------------- //
         function UpdateCharacterMissionsStaunton () {
             // Asuka
+            UpdateMissionsStauntonAsukaMission1();
+            UpdateMissionsStauntonAsukaMission2();
+            UpdateMissionsStauntonAsukaMission3();
+            UpdateMissionsStauntonAsukaMission4();
             // Kenji
+            UpdateMissionsStauntonKenjiMission1();
+            UpdateMissionsStauntonKenjiMission2();
+            UpdateMissionsStauntonKenjiMission3();
+            UpdateMissionsStauntonKenjiMission4();
+            UpdateMissionsStauntonKenjiMission5();
             // Ray
+            UpdateMissionsStauntonRayMission1();
+            UpdateMissionsStauntonRayMission2();
+            UpdateMissionsStauntonRayMission3();
             // Donald
+            UpdateMissionsStauntonDonaldMission1();
+            UpdateMissionsStauntonDonaldMission2();
+            UpdateMissionsStauntonDonaldMission3();
+        }
+        function UpdateMissionsStauntonAsukaMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission1");
+            var szChecked = localStorage.getItem("MissionsStauntonAsukaMission1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonAsukaMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission2");
+            var szChecked = localStorage.getItem("MissionsStauntonAsukaMission2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonAsukaMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission3");
+            var szChecked = localStorage.getItem("MissionsStauntonAsukaMission3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonAsukaMission4 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission4");
+            var szChecked = localStorage.getItem("MissionsStauntonAsukaMission4");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission1");
+            var szChecked = localStorage.getItem("MissionsStauntonKenjiMission1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission2");
+            var szChecked = localStorage.getItem("MissionsStauntonKenjiMission2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission3");
+            var szChecked = localStorage.getItem("MissionsStauntonKenjiMission3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiMission4 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission4");
+            var szChecked = localStorage.getItem("MissionsStauntonKenjiMission4");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonKenjiMission5 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission5");
+            var szChecked = localStorage.getItem("MissionsStauntonKenjiMission5");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonRayMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission1");
+            var szChecked = localStorage.getItem("MissionsStauntonRayMission1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonRayMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission2");
+            var szChecked = localStorage.getItem("MissionsStauntonRayMission2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonRayMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission3");
+            var szChecked = localStorage.getItem("MissionsStauntonRayMission3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonDonaldMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission1");
+            var szChecked = localStorage.getItem("MissionsStauntonDonaldMission1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonDonaldMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission2");
+            var szChecked = localStorage.getItem("MissionsStauntonDonaldMission2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateMissionsStauntonDonaldMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission3");
+            var szChecked = localStorage.getItem("MissionsStauntonDonaldMission3");
+
+            kCheckbox.checked = szChecked === "true";
         }
         // -------------------------- Shoreside Missions -------------------------- //
         function UpdateCharacterMissionsShoreside () {
@@ -1680,7 +1785,66 @@
             localStorage.setItem("MissionsPortlandSalvatoreMission5", kCheckbox.checked ? "true" : "false");
         }
         // -------------------------- Staunton Character Missions -------------------------- //
-
+        function SaveMissionsStauntonAsukaMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission1");
+            localStorage.setItem("MissionsStauntonAsukaMission1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonAsukaMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission2");
+            localStorage.setItem("MissionsStauntonAsukaMission2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonAsukaMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission3");
+            localStorage.setItem("MissionsStauntonAsukaMission3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonAsukaMission4 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonAsukaMission4");
+            localStorage.setItem("MissionsStauntonAsukaMission4", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission1");
+            localStorage.setItem("MissionsStauntonKenjiMission1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission2");
+            localStorage.setItem("MissionsStauntonKenjiMission2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission3");
+            localStorage.setItem("MissionsStauntonKenjiMission3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiMission4 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission4");
+            localStorage.setItem("MissionsStauntonKenjiMission4", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonKenjiMission5 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonKenjiMission5");
+            localStorage.setItem("MissionsStauntonKenjiMission5", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonRayMission1 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission1");
+            localStorage.setItem("MissionsStauntonRayMission1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonRayMission2 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission2");
+            localStorage.setItem("MissionsStauntonRayMission2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonRayMission3 () {
+            var kCheckbox = document.getElementById("kMissionsStauntonRayMission3");
+            localStorage.setItem("MissionsStauntonRayMission3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonDonaldMission1() {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission1");
+            localStorage.setItem("MissionsStauntonDonaldMission1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonDonaldMission2() {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission2");
+            localStorage.setItem("MissionsStauntonDonaldMission2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveMissionsStauntonDonaldMission3() {
+            var kCheckbox = document.getElementById("kMissionsStauntonDonaldMission3");
+            localStorage.setItem("MissionsStauntonDonaldMission3", kCheckbox.checked ? "true" : "false");
+        }
         // -------------------------- Shoreside Character Missions -------------------------- //
 
         // -------------------------- Vigilante Mission -------------------------- //
@@ -2491,19 +2655,19 @@
         <h3 class="MissionCategory"><a id="MissionsStauntonAsuka">Asuka Kasen</a></h3>
         <ul>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonAsukaMission1" name="kMissionsStauntonAsukaMission1" value="kMissionsStauntonAsukaMission1">
+                <input type="checkbox" id="kMissionsStauntonAsukaMission1" name="kMissionsStauntonAsukaMission1" value="kMissionsStauntonAsukaMission1" onchange="SaveMissionsStauntonAsukaMission1()">
                 <label for="kMissionsStauntonAsukaMission1">Sayonara Salvatore</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonAsukaMission2" name="kMissionsStauntonAsukaMission2" value="kMissionsStauntonAsukaMission2">
+                <input type="checkbox" id="kMissionsStauntonAsukaMission2" name="kMissionsStauntonAsukaMission2" value="kMissionsStauntonAsukaMission2" onchange="SaveMissionsStauntonAsukaMission2()">
                 <label for="kMissionsStauntonAsukaMission2">Under Surveillance</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonAsukaMission3" name="kMissionsStauntonAsukaMission3" value="kMissionsStauntonAsukaMission3">
+                <input type="checkbox" id="kMissionsStauntonAsukaMission3" name="kMissionsStauntonAsukaMission3" value="kMissionsStauntonAsukaMission3" onchange="SaveMissionsStauntonAsukaMission3()">
                 <label for="kMissionsStauntonAsukaMission3">Paparazzi Purge</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonAsukaMission4" name="kMissionsStauntonAsukaMission4" value="kMissionsStauntonAsukaMission4">
+                <input type="checkbox" id="kMissionsStauntonAsukaMission4" name="kMissionsStauntonAsukaMission4" value="kMissionsStauntonAsukaMission4" onchange="SaveMissionsStauntonAsukaMission4()">
                 <label for="kMissionsStauntonAsukaMission4">Payday for Ray</label>
             </li>
         </ul>
@@ -2512,23 +2676,23 @@
         <h3 class="MissionCategory"><a id="MissionsStauntonKenji">Kenji Kasen</a></h3>
         <ul>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonKenjiMission1" name="kMissionsStauntonKenjiMission1" value="kMissionsStauntonKenjiMission1">
+                <input type="checkbox" id="kMissionsStauntonKenjiMission1" name="kMissionsStauntonKenjiMission1" value="kMissionsStauntonKenjiMission1" onchange="SaveMissionsStauntonKenjiMission1()">
                 <label for="kMissionsStauntonKenjiMission1">Kanbu Bust Out</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonKenjiMission2" name="kMissionsStauntonKenjiMission2" value="kMissionsStauntonKenjiMission2">
+                <input type="checkbox" id="kMissionsStauntonKenjiMission2" name="kMissionsStauntonKenjiMission2" value="kMissionsStauntonKenjiMission2" onchange="SaveMissionsStauntonKenjiMission2()">
                 <label for="kMissionsStauntonKenjiMission2">Grand Theft Auto</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonKenjiMission3" name="kMissionsStauntonKenjiMission3" value="kMissionsStauntonKenjiMission3">
+                <input type="checkbox" id="kMissionsStauntonKenjiMission3" name="kMissionsStauntonKenjiMission3" value="kMissionsStauntonKenjiMission3" onchange="SaveMissionsStauntonKenjiMission3()">
                 <label for="kMissionsStauntonKenjiMission3">Deal Steal</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonKenjiMission4" name="kMissionsStauntonKenjiMission4" value="kMissionsStauntonKenjiMission4">
+                <input type="checkbox" id="kMissionsStauntonKenjiMission4" name="kMissionsStauntonKenjiMission4" value="kMissionsStauntonKenjiMission4" onchange="SaveMissionsStauntonKenjiMission4()">
                 <label for="kMissionsStauntonKenjiMission4">Shima</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonKenjiMission5" name="kMissionsStauntonKenjiMission5" value="kMissionsStauntonKenjiMission5">
+                <input type="checkbox" id="kMissionsStauntonKenjiMission5" name="kMissionsStauntonKenjiMission5" value="kMissionsStauntonKenjiMission5" onchange="SaveMissionsStauntonKenjiMission5()">
                 <label for="kMissionsStauntonKenjiMission5">Smack Down</label>
             </li>
         </ul>
@@ -2537,15 +2701,15 @@
         <h3 class="MissionCategory"><a id="MissionsStauntonRay">Ray Machowski</a></h3>
         <ul>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonRayMission1" name="kMissionsStauntonRayMission1" value="kMissionsStauntonRayMission1">
+                <input type="checkbox" id="kMissionsStauntonRayMission1" name="kMissionsStauntonRayMission1" value="kMissionsStauntonRayMission1" onchange="SaveMissionsStauntonRayMission1()">
                 <label for="kMissionsStauntonRayMission1">Silence the Sneak</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonRayMission2" name="kMissionsStauntonRayMission2" value="kMissionsStauntonRayMission2">
+                <input type="checkbox" id="kMissionsStauntonRayMission2" name="kMissionsStauntonRayMission2" value="kMissionsStauntonRayMission2" onchange="SaveMissionsStauntonRayMission2()">
                 <label for="kMissionsStauntonRayMission2">Arms Shortage</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonRayMission3" name="kMissionsStauntonRayMission3" value="kMissionsStauntonRayMission3">
+                <input type="checkbox" id="kMissionsStauntonRayMission3" name="kMissionsStauntonRayMission3" value="kMissionsStauntonRayMission3" onchange="SaveMissionsStauntonRayMission3()">
                 <label for="kMissionsStauntonRayMission3">Evidence Dash</label>
             </li>
         </ul>
@@ -2554,15 +2718,15 @@
         <h3 class="MissionCategory"><a id="MissionsStauntonDonald">Donald Love</a></h3>
         <ul>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonDonaldMission1" name="kMissionsStauntonDonaldMission1" value="kMissionsStauntonDonaldMission1">
+                <input type="checkbox" id="kMissionsStauntonDonaldMission1" name="kMissionsStauntonDonaldMission1" value="kMissionsStauntonDonaldMission1" onchange="SaveMissionsStauntonDonaldMission1()">
                 <label for="kMissionsStauntonDonaldMission1">Liberator</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonDonaldMission2" name="kMissionsStauntonDonaldMission2" value="kMissionsStauntonDonaldMission2">
+                <input type="checkbox" id="kMissionsStauntonDonaldMission2" name="kMissionsStauntonDonaldMission2" value="kMissionsStauntonDonaldMission2" onchange="SaveMissionsStauntonDonaldMission2()">
                 <label for="kMissionsStauntonDonaldMission2">Waka-Gashira Wipeout!</label>
             </li>
             <li class="CheckListItem">
-                <input type="checkbox" id="kMissionsStauntonDonaldMission3" name="kMissionsStauntonDonaldMission3" value="kMissionsStauntonDonaldMission3">
+                <input type="checkbox" id="kMissionsStauntonDonaldMission3" name="kMissionsStauntonDonaldMission3" value="kMissionsStauntonDonaldMission3" onchange="SaveMissionsStauntonDonaldMission3()">
                 <label for="kMissionsStauntonDonaldMission3">A Drop in the Ocean</label>
             </li>
         </ul>
