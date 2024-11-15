@@ -230,10 +230,24 @@
             UpdateStadiumEventsKickstartComplete();
         }
         function UpdateDetailedRaceTournamentsChecklist () {
+            UpdateRaceTournamentsLosSantosComplete();
+            UpdateRaceTournamentsSanFierroComplete();
+            UpdateRaceTournamentsLasVenturasFreightDepotComplete();
+            UpdateRaceTournamentsLasVenturasAirportCheckpointComplete();
         }
         function UpdateDetailedCollectiblesChecklist () {
+            UpdateCollectiblesSprayTagsComplete();
+            UpdateCollectiblesSnapshotsComplete();
+            UpdateCollectiblesHorseshoesComplete();
+            UpdateCollectiblesOystersComplete();
         }
         function UpdateDetailedPropertyPurchasesChecklist () {
+            UpdatePropertyPurchasesLosSantosComplete();
+            UpdatePropertyPurchasesRedCountyComplete();
+            UpdatePropertyPurchasesBadlandsComplete();
+            UpdatePropertyPurchasesSanFierroComplete();
+            UpdatePropertyPurchasesDesertComplete();
+            UpdatePropertyPurchasesLasVenturasComplete();
         }
 
         // -------------------------- Detailed Story Missions -------------------------- //
@@ -448,6 +462,93 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Detailed Race Tournaments -------------------------- //
+        function UpdateRaceTournamentsLosSantosComplete () {
+            var kCheckbox = document.getElementById("kRaceTournamentsLosSantos");
+            var szChecked = localStorage.getItem("kRaceTournamentsLosSantos");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRaceTournamentsSanFierroComplete () {
+            var kCheckbox = document.getElementById("kRaceTournamentsSanFierro");
+            var szChecked = localStorage.getItem("kRaceTournamentsSanFierro");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRaceTournamentsLasVenturasFreightDepotComplete () {
+            var kCheckbox = document.getElementById("kRaceTournamentsLasVenturasFreightDepot");
+            var szChecked = localStorage.getItem("kRaceTournamentsLasVenturasFreightDepot");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateRaceTournamentsLasVenturasAirportCheckpointComplete () {
+            var kCheckbox = document.getElementById("kRaceTournamentsLasVenturasAirportCheckpoint");
+            var szChecked = localStorage.getItem("kRaceTournamentsLasVenturasAirportCheckpoint");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Collectibles -------------------------- //
+        function UpdateCollectiblesSprayTagsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesSprayTags");
+            var szChecked = localStorage.getItem("kCollectiblesSprayTags");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesSnapshotsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesSnapshots");
+            var szChecked = localStorage.getItem("kCollectiblesSnapshots");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesHorseshoesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesHorseshoes");
+            var szChecked = localStorage.getItem("kCollectiblesHorseshoes");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateCollectiblesOystersComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesOysters");
+            var szChecked = localStorage.getItem("kCollectiblesOysters");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Property Purchases -------------------------- //
+        function UpdatePropertyPurchasesLosSantosComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesLosSantos");
+            var szChecked = localStorage.getItem("kPropertyPurchasesLosSantos");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdatePropertyPurchasesRedCountyComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesRedCounty");
+            var szChecked = localStorage.getItem("kPropertyPurchasesRedCounty");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdatePropertyPurchasesBadlandsComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesBadlands");
+            var szChecked = localStorage.getItem("kPropertyPurchasesBadlands");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdatePropertyPurchasesSanFierroComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesSanFierro");
+            var szChecked = localStorage.getItem("kPropertyPurchasesSanFierro");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdatePropertyPurchasesDesertComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesDesert");
+            var szChecked = localStorage.getItem("kPropertyPurchasesDesert");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdatePropertyPurchasesLasVenturasComplete() {
+            var kCheckbox = document.getElementById("kPropertyPurchasesLasVenturas");
+            var szChecked = localStorage.getItem("kPropertyPurchasesLasVenturas");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Detailed Missions -------------------------- //
 
@@ -648,6 +749,65 @@
         function SaveStadiumEventsKickstartComplete () {
             var kCheckbox = document.getElementById("kStadiumEventsKickstart");
             localStorage.setItem("kStadiumEventsKickstart", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Race Tournaments -------------------------- //
+        function SaveRaceTournamentsLosSantosComplete() {
+            var kCheckbox = document.getElementById("kRaceTournamentsLosSantos");
+            localStorage.setItem("kRaceTournamentsLosSantos", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRaceTournamentsSanFierroComplete() {
+            var kCheckbox = document.getElementById("kRaceTournamentsSanFierro");
+            localStorage.setItem("kRaceTournamentsSanFierro", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRaceTournamentsLasVenturasFreightDepotComplete() {
+            var kCheckbox = document.getElementById("kRaceTournamentsLasVenturasFreightDepot");
+            localStorage.setItem("kRaceTournamentsLasVenturasFreightDepot", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveRaceTournamentsLasVenturasAirportCheckpointComplete() {
+            var kCheckbox = document.getElementById("kRaceTournamentsLasVenturasAirportCheckpoint");
+            localStorage.setItem("kRaceTournamentsLasVenturasAirportCheckpoint", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Collectibles -------------------------- //
+        function SaveCollectiblesSprayTagsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesSprayTags");
+            localStorage.setItem("kCollectiblesSprayTags", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesSnapshotsComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesSnapshots");
+            localStorage.setItem("kCollectiblesSnapshots", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesHorseshoesComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesHorseshoes");
+            localStorage.setItem("kCollectiblesHorseshoes", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveCollectiblesOystersComplete () {
+            var kCheckbox = document.getElementById("kCollectiblesOysters");
+            localStorage.setItem("kCollectiblesOysters", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Property Purchases -------------------------- //
+        function SavePropertyPurchasesLosSantosComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesLosSantos");
+            localStorage.setItem("kPropertyPurchasesLosSantos", kCheckbox.checked ? "true" : "false");
+        }
+        function SavePropertyPurchasesRedCountyComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesRedCounty");
+            localStorage.setItem("kPropertyPurchasesRedCounty", kCheckbox.checked ? "true" : "false");
+        }
+        function SavePropertyPurchasesBadlandsComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesBadlands");
+            localStorage.setItem("kPropertyPurchasesBadlands", kCheckbox.checked ? "true" : "false");
+        }
+        function SavePropertyPurchasesSanFierroComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesSanFierro");
+            localStorage.setItem("kPropertyPurchasesSanFierro", kCheckbox.checked ? "true" : "false");
+        }
+        function SavePropertyPurchasesDesertComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesDesert");
+            localStorage.setItem("kPropertyPurchasesDesert", kCheckbox.checked ? "true" : "false");
+        }
+        function SavePropertyPurchasesLasVenturasComplete () {
+            var kCheckbox = document.getElementById("kPropertyPurchasesLasVenturas");
+            localStorage.setItem("kPropertyPurchasesLasVenturas", kCheckbox.checked ? "true" : "false");
         }
 
         // -------------------------- Detailed Missions -------------------------- //
@@ -934,20 +1094,20 @@
                 <a id="kRaceTournamentsChecklist">Race Tournaments</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kRaceTournamentsLosSantosRaces" name="kRaceTournamentsLosSantosRaces" value="kRaceTournamentsLosSantosRaces">
-                        <label for="kRaceTournamentsLosSantosRaces"><a href="#kRaceTournamentsLosSantosRacesChecklist">Los Santos Race Tournaments</a></label>
+                        <input type="checkbox" id="kRaceTournamentsLosSantos" name="kRaceTournamentsLosSantos" value="kRaceTournamentsLosSantos" onchange="SaveRaceTournamentsLosSantosComplete()">
+                        <label for="kRaceTournamentsLosSantos"><a href="#kRaceTournamentsLosSantosChecklist">Los Santos Race Tournaments</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kRaceTournamentsSanFierroRaces" name="kRaceTournamentsSanFierroRaces" value="kRaceTournamentsSanFierroRaces">
-                        <label for="kRaceTournamentsSanFierroRaces"><a href="#kRaceTournamentsSanFierroRacesChecklist">San Fierro Race Tournaments</a></label>
+                        <input type="checkbox" id="kRaceTournamentsSanFierro" name="kRaceTournamentsSanFierro" value="kRaceTournamentsSanFierro" onchange="SaveRaceTournamentsSanFierroComplete()">
+                        <label for="kRaceTournamentsSanFierro"><a href="#kRaceTournamentsSanFierroChecklist">San Fierro Race Tournaments</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kRaceTournamentsLasVenturasRaces" name="kRaceTournamentsLasVenturasRaces" value="kRaceTournamentsLasVenturasRaces">
-                        <label for="kRaceTournamentsLasVenturasRaces"><a href="#kRaceTournamentsLasVenturasRacesChecklist">Las Venturas Freight Depot Race Tournaments</a></label>
+                        <input type="checkbox" id="kRaceTournamentsLasVenturasFreightDepot" name="kRaceTournamentsLasVenturasFreightDepot" value="kRaceTournamentsLasVenturasFreightDepot" onchange="SaveRaceTournamentsLasVenturasFreightDepotComplete()">
+                        <label for="kRaceTournamentsLasVenturasFreightDepot"><a href="#kRaceTournamentsLasVenturasFreightDepotChecklist">Las Venturas Freight Depot Race Tournaments</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kRaceTournamentsAirRaces" name="kRaceTournamentsAirRaces" value="kRaceTournamentsAirRaces">
-                        <label for="kRaceTournamentsAirRaces"><a href="#kRaceTournamentsAirRacesChecklist">Las Venturas Airpot Checkpoint Race Tournaments</a></label>
+                        <input type="checkbox" id="kRaceTournamentsLasVenturasAirportCheckpoint" name="kRaceTournamentsLasVenturasAirportCheckpoint" value="kRaceTournamentsLasVenturasAirportCheckpoint" onchange="SaveRaceTournamentsLasVenturasAirportCheckpointComplete()">
+                        <label for="kRaceTournamentsLasVenturasAirportCheckpoint"><a href="#kRaceTournamentsLasVenturasAirportCheckpointChecklist">Las Venturas Airpot Checkpoint Race Tournaments</a></label>
                     </li>
                 </ul>
             </div>
@@ -957,19 +1117,19 @@
                 <a id="kCollectiblesChecklist">Collectibles</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesSprayTags" name="kCollectiblesSprayTags" value="kCollectiblesSprayTags">
+                        <input type="checkbox" id="kCollectiblesSprayTags" name="kCollectiblesSprayTags" value="kCollectiblesSprayTags" onchange="SaveCollectiblesSprayTagsComplete()">
                         <label for="kCollectiblesSprayTags"><a href="#kCollectiblesSprayTagsChecklist">Spray Tags</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesSnapshots" name="kCollectiblesSnapshots" value="kCollectiblesSnapshots">
+                        <input type="checkbox" id="kCollectiblesSnapshots" name="kCollectiblesSnapshots" value="kCollectiblesSnapshots" onchange="SaveCollectiblesSnapshotsComplete()">
                         <label for="kCollectiblesSnapshots"><a href="#kCollectiblesSnapshotsChecklist">Snapshots</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesHorseshoes" name="kCollectiblesHorseshoes" value="kCollectiblesHorseshoes">
+                        <input type="checkbox" id="kCollectiblesHorseshoes" name="kCollectiblesHorseshoes" value="kCollectiblesHorseshoes" onchange="SaveCollectiblesHorseshoesComplete()">
                         <label for="kCollectiblesHorseshoes"><a href="#kCollectiblesHorseshoesChecklist">Horseshoes</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesOysters" name="kCollectiblesOysters" value="kCollectiblesOysters">
+                        <input type="checkbox" id="kCollectiblesOysters" name="kCollectiblesOysters" value="kCollectiblesOysters" onchange="SaveCollectiblesOystersComplete()">
                         <label for="kCollectiblesOysters"><a href="#kCollectiblesOystersChecklist">Oysters</a></label>
                     </li>
                 </ul>
@@ -980,20 +1140,28 @@
                 <a id="PropertyPurchases">Property Purchases</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kPropertyPurchasesLosSantosRedCounty" name="kPropertyPurchasesLosSantosRedCounty" value="kPropertyPurchasesLosSantosRedCounty">
-                        <label for="kPropertyPurchasesLosSantosRedCounty"><a href="#kPropertyPurchasesLosSantosRedCountyChecklist">Los Santos / Red County</a></label>
+                        <input type="checkbox" id="kPropertyPurchasesLosSantos" name="kPropertyPurchasesLosSantos" value="kPropertyPurchasesLosSantos" onchange="SavePropertyPurchasesLosSantosComplete()">
+                        <label for="kPropertyPurchasesLosSantos"><a href="#kPropertyPurchasesLosSantosChecklist">Los Santos</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kPropertyPurchasesBadlandsSanFierro" name="kPropertyPurchasesBadlandsSanFierro" value="kPropertyPurchasesBadlandsSanFierro">
-                        <label for="kPropertyPurchasesBadlandsSanFierro"><a href="#kPropertyPurchasesBadlandsSanFierroChecklist">Badlands / San Fierro</a></label>
+                        <input type="checkbox" id="kPropertyPurchasesRedCounty" name="kPropertyPurchasesRedCounty" value="kPropertyPurchasesRedCounty" onchange="SavePropertyPurchasesRedCountyComplete()">
+                        <label for="kPropertyPurchasesRedCounty"><a href="#kPropertyPurchasesRedCountyChecklist">Red County</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kPropertyPurchasesDesertLasVenturas" name="kPropertyPurchasesDesertLasVenturas" value="kPropertyPurchasesDesertLasVenturas">
-                        <label for="kPropertyPurchasesDesertLasVenturas"><a href="#kPropertyPurchasesDesertLasVenturasChecklist">Desert / Las Venturas</a></label>
+                        <input type="checkbox" id="kPropertyPurchasesBadlands" name="kPropertyPurchasesBadlands" value="kPropertyPurchasesBadlands" onchange="SavePropertyPurchasesBadlandsComplete()">
+                        <label for="kPropertyPurchasesBadlands"><a href="#kPropertyPurchasesBadlandsChecklist">Badlands</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kPropertyPurchasesReturnToLosSantos" name="kPropertyPurchasesReturnToLosSantos" value="kPropertyPurchasesReturnToLosSantos">
-                        <label for="kPropertyPurchasesReturnToLosSantos"><a href="#kPropertyPurchasesReturnToLosSantosChecklist">Return to Los Santos</a></label>
+                        <input type="checkbox" id="kPropertyPurchasesSanFierro" name="kPropertyPurchasesSanFierro" value="kPropertyPurchasesSanFierro" onchange="SavePropertyPurchasesSanFierroComplete()">
+                        <label for="kPropertyPurchasesSanFierro"><a href="#kPropertyPurchasesSanFierroChecklist">San Fierro</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesDesert" name="kPropertyPurchasesDesert" value="kPropertyPurchasesDesert" onchange="SavePropertyPurchasesDesertComplete()">
+                        <label for="kPropertyPurchasesDesert"><a href="#kPropertyPurchasesDesertChecklist">Desert</a></label>
+                    </li>
+                    <li class="CheckListItem">
+                        <input type="checkbox" id="kPropertyPurchasesLasVenturas" name="kPropertyPurchasesLasVenturas" value="kPropertyPurchasesLasVenturas" onchange="SavePropertyPurchasesLasVenturasComplete()">
+                        <label for="kPropertyPurchasesLasVenturas"><a href="#kPropertyPurchasesLasVenturasChecklist">Las Venturas</a></label>
                     </li>
                 </ul>
             </div>
