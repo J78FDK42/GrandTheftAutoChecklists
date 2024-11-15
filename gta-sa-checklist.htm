@@ -48,17 +48,17 @@
             UpdatePropertyPurchasesComplete();
         }
         function UpdateDetailedChecklist () {
-            //UpdateDetailedStoryMissionsChecklist();
-            //UpdateDetailedAssetMissionsChecklist();
-            //UpdateDetailedVehicleMissionsChecklist();
-            //UpdateDetailedVehicleChallengesChecklist();
-            //UpdateDetailedVehicleCollectiblesChecklist();
-            //UpdateDetailedWeaponChallengesChecklist();
-            //UpdateDetailedSchoolsChecklist();
-            //UpdateDetailedStadiumEventsChecklist();
-            //UpdateDetailedRaceTournamentsChecklist();
-            //UpdateDetailedCollectiblesChecklist();
-            //UpdateDetailedPropertyPurchasesChecklist();
+            UpdateDetailedStoryMissionsChecklist();
+            UpdateDetailedAssetMissionsChecklist();
+            UpdateDetailedVehicleMissionsChecklist();
+            UpdateDetailedVehicleChallengesChecklist();
+            UpdateDetailedVehicleCollectiblesChecklist();
+            UpdateDetailedWeaponChallengesChecklist();
+            UpdateDetailedSchoolsChecklist();
+            UpdateDetailedStadiumEventsChecklist();
+            UpdateDetailedRaceTournamentsChecklist();
+            UpdateDetailedCollectiblesChecklist();
+            UpdateDetailedPropertyPurchasesChecklist();
         }
         function UpdateDetailedMissions () {
             // Story Missions
@@ -179,6 +179,188 @@
         }
 
         // -------------------------- Detailed Checklist -------------------------- //
+        function UpdateDetailedStoryMissionsChecklist() {
+            UpdateStoryMissionsLosSantosRedCountyComplete();
+            UpdateStoryMissionsBadlandsSanFierroComplete();
+            UpdateStoryMissionsDesertLasVenturasComplete();
+            UpdateStoryMissionsReturnToLosSantosComplete();
+        }
+        function UpdateDetailedAssetMissionsChecklist() {
+            UpdateAssetMissionsCourierComplete();
+            UpdateAssetMissionsValetComplete();
+            UpdateAssetMissionsTruckingComplete();
+            UpdateAssetMissionsQuarryComplete();
+            UpdateAssetMissionsZeroRCComplete();
+            UpdateAssetMissionsWangCarsComplete();
+        }
+        function UpdateDetailedVehicleMissionsChecklist() {
+            UpdateVehicleMissionsParamedicComplete();
+            UpdateVehicleMissionsFirefighterComplete();
+            UpdateVehicleMissionsVigilanteComplete();
+            UpdateVehicleMissionsTaxiComplete();
+            UpdateVehicleMissionsPimpingComplete();
+            UpdateVehicleMissionsTrainComplete();
+        }
+        function UpdateDetailedVehicleChallengesChecklist() {
+            UpdateVehicleChallengesBMXComplete();
+            UpdateVehicleChallengesNRG500Complete();
+            UpdateVehicleChallengesChilliadComplete();
+        }
+        function UpdateDetailedVehicleCollectiblesChecklist () {
+            UpdateVehicleCollectiblesList1Complete();
+            UpdateVehicleCollectiblesList2Complete();
+            UpdateVehicleCollectiblesList3Complete();
+        }
+        function UpdateDetailedWeaponChallengesChecklist () {
+        }
+        function UpdateDetailedSchoolsChecklist () {
+        }
+        function UpdateDetailedStadiumEventsChecklist () {
+        }
+        function UpdateDetailedRaceTournamentsChecklist () {
+        }
+        function UpdateDetailedCollectiblesChecklist () {
+        }
+        function UpdateDetailedPropertyPurchasesChecklist () {
+        }
+
+        // -------------------------- Detailed Story Missions -------------------------- //
+        function UpdateStoryMissionsLosSantosRedCountyComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryLosSantosRedCounty");
+            var szChecked = localStorage.getItem("kMissionsStoryLosSantosRedCounty");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStoryMissionsBadlandsSanFierroComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryBadlandsSanFierro");
+            var szChecked = localStorage.getItem("kMissionsStoryBadlandsSanFierro");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStoryMissionsDesertLasVenturasComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryDesertLasVenturas");
+            var szChecked = localStorage.getItem("kMissionsStoryDesertLasVenturas");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStoryMissionsReturnToLosSantosComplete () {
+            var kCheckbox = document.getElementById("kMissionsStoryReturnToLosSantos");
+            var szChecked = localStorage.getItem("kMissionsStoryReturnToLosSantos");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Asset Missions -------------------------- //
+        function UpdateAssetMissionsCourierComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetCourier");
+            var szChecked = localStorage.getItem("kMissionsAssetCourier");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateAssetMissionsValetComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetValet");
+            var szChecked = localStorage.getItem("kMissionsAssetValet");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateAssetMissionsTruckingComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetTrucking");
+            var szChecked = localStorage.getItem("kMissionsAssetTrucking");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateAssetMissionsQuarryComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetQuarry");
+            var szChecked = localStorage.getItem("kMissionsAssetQuarry");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateAssetMissionsZeroRCComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetZeroRC");
+            var szChecked = localStorage.getItem("kMissionsAssetZeroRC");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateAssetMissionsWangCarsComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetWangCars");
+            var szChecked = localStorage.getItem("kMissionsAssetWangCars");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Vehicle Missions -------------------------- //
+        function UpdateVehicleMissionsParamedicComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleParamedic");
+            var szChecked = localStorage.getItem("kMissionsVehicleParamedic");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsFirefighterComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleFirefighter");
+            var szChecked = localStorage.getItem("kMissionsVehicleFirefighter");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsVigilanteComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilante");
+            var szChecked = localStorage.getItem("kMissionsVehicleVigilante");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxi");
+            var szChecked = localStorage.getItem("kMissionsVehicleTaxi");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsPimpingComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehiclePimping");
+            var szChecked = localStorage.getItem("kMissionsVehiclePimping");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTrainComplete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTrain");
+            var szChecked = localStorage.getItem("kMissionsVehicleTrain");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Vehicle Challenges -------------------------- //
+        function UpdateVehicleChallengesBMXComplete () {
+            var kCheckbox = document.getElementById("kChallengesVehicleBMX");
+            var szChecked = localStorage.getItem("kChallengesVehicleBMX");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleChallengesNRG500Complete () {
+            var kCheckbox = document.getElementById("kChallengesVehicleNRG500");
+            var szChecked = localStorage.getItem("kChallengesVehicleNRG500");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleChallengesChilliadComplete () {
+            var kCheckbox = document.getElementById("kChallengesVehicleChilliad");
+            var szChecked = localStorage.getItem("kChallengesVehicleChilliad");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Vehicle Collectibles -------------------------- //
+        function UpdateVehicleCollectiblesList1Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList1");
+            var szChecked = localStorage.getItem("kCollectiblesVehicleList1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleCollectiblesList2Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList2");
+            var szChecked = localStorage.getItem("kCollectiblesVehicleList2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleCollectiblesList3Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList3");
+            var szChecked = localStorage.getItem("kCollectiblesVehicleList3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
 
         // -------------------------- Detailed Missions -------------------------- //
 
@@ -235,6 +417,100 @@
         }
 
         // -------------------------- Detailed Checklist -------------------------- //
+
+        // -------------------------- Detailed Story Missions -------------------------- //
+        function SaveStoryMissionsLosSantosRedCountyComplete() {
+            var kCheckbox = document.getElementById("kMissionsStoryLosSantosRedCounty");
+            localStorage.setItem("kMissionsStoryLosSantosRedCounty", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStoryMissionsBadlandsSanFierroComplete() {
+            var kCheckbox = document.getElementById("kMissionsStoryBadlandsSanFierro");
+            localStorage.setItem("kMissionsStoryBadlandsSanFierro", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStoryMissionsDesertLasVenturasComplete() {
+            var kCheckbox = document.getElementById("kMissionsStoryDesertLasVenturas");
+            localStorage.setItem("kMissionsStoryDesertLasVenturas", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStoryMissionsReturnToLosSantosComplete() {
+            var kCheckbox = document.getElementById("kMissionsStoryReturnToLosSantos");
+            localStorage.setItem("kMissionsStoryReturnToLosSantos", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Asset Missions -------------------------- //
+        function SaveAssetMissionsCourierComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetCourier");
+            localStorage.setItem("kMissionsAssetCourier", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveAssetMissionsValetComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetValet");
+            localStorage.setItem("kMissionsAssetValet", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveAssetMissionsTruckingComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetTrucking");
+            localStorage.setItem("kMissionsAssetTrucking", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveAssetMissionsQuarryComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetQuarry");
+            localStorage.setItem("kMissionsAssetQuarry", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveAssetMissionsZeroRCComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetZeroRC");
+            localStorage.setItem("kMissionsAssetZeroRC", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveAssetMissionsWangCarsComplete() {
+            var kCheckbox = document.getElementById("kMissionsAssetWangCars");
+            localStorage.setItem("kMissionsAssetWangCars", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Vehicle Missions -------------------------- //
+        function SaveVehicleMissionsParamedicComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleParamedic");
+            localStorage.setItem("kMissionsVehicleParamedic", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsFirefighterComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleFirefighter");
+            localStorage.setItem("kMissionsVehicleFirefighter", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsVigilanteComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleVigilante");
+            localStorage.setItem("kMissionsVehicleVigilante", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxi");
+            localStorage.setItem("kMissionsVehicleTaxi", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsPimpingComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehiclePimping");
+            localStorage.setItem("kMissionsVehiclePimping", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTrainComplete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTrain");
+            localStorage.setItem("kMissionsVehicleTrain", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Vehicle Challenges -------------------------- //
+        function SaveVehicleChallengesBMXComplete() {
+            var kCheckbox = document.getElementById("kChallengesVehicleBMX");
+            localStorage.setItem("kChallengesVehicleBMX", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleChallengesNRG500Complete() {
+            var kCheckbox = document.getElementById("kChallengesVehicleNRG500");
+            localStorage.setItem("kChallengesVehicleNRG500", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleChallengesChilliadComplete() {
+            var kCheckbox = document.getElementById("kChallengesVehicleChilliad");
+            localStorage.setItem("kChallengesVehicleChilliad", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Vehicle Collectibles -------------------------- //
+        function SaveVehicleCollectiblesList1Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList1");
+            localStorage.setItem("kCollectiblesVehicleList1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleCollectiblesList2Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList2");
+            localStorage.setItem("kCollectiblesVehicleList2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleCollectiblesList3Complete () {
+            var kCheckbox = document.getElementById("kCollectiblesVehicleList3");
+            localStorage.setItem("kCollectiblesVehicleList3", kCheckbox.checked ? "true" : "false");
+        }
 
         // -------------------------- Detailed Missions -------------------------- //
 
@@ -328,19 +604,19 @@
                 <a id="kMissionsStoryChecklist">Story Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryLosSantosRedCounty" name="kMissionsStoryLosSantosRedCounty" value="kMissionsStoryLosSantosRedCounty">
+                        <input type="checkbox" id="kMissionsStoryLosSantosRedCounty" name="kMissionsStoryLosSantosRedCounty" value="kMissionsStoryLosSantosRedCounty" onchange="SaveStoryMissionsLosSantosRedCountyComplete()">
                         <label for="kMissionsStoryLosSantosRedCounty"><a href="#kMissionsStoryLosSantosRedCountyChecklist">Los Santos / Red County</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryBadlandsSanFierro" name="kMissionsStoryBadlandsSanFierro" value="kMissionsStoryBadlandsSanFierro">
+                        <input type="checkbox" id="kMissionsStoryBadlandsSanFierro" name="kMissionsStoryBadlandsSanFierro" value="kMissionsStoryBadlandsSanFierro" onchange="SaveStoryMissionsBadlandsSanFierroComplete()">
                         <label for="kMissionsStoryBadlandsSanFierro"><a href="#kMissionsStoryBadlandsSanFierroChecklist">Badlands / San Fierro</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryDesertLasVenturas" name="kMissionsStoryDesertLasVenturas" value="kMissionsStoryDesertLasVenturas">
+                        <input type="checkbox" id="kMissionsStoryDesertLasVenturas" name="kMissionsStoryDesertLasVenturas" value="kMissionsStoryDesertLasVenturas" onchange="SaveStoryMissionsDesertLasVenturasComplete()">
                         <label for="kMissionsStoryDesertLasVenturas"><a href="#kMissionsStoryDesertLasVenturasChecklist">Desert / Las Venturas</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsStoryReturnToLosSantos" name="kMissionsStoryReturnToLosSantos" value="kMissionsStoryReturnToLosSantos">
+                        <input type="checkbox" id="kMissionsStoryReturnToLosSantos" name="kMissionsStoryReturnToLosSantos" value="kMissionsStoryReturnToLosSantos" onchange="SaveStoryMissionsReturnToLosSantosComplete()">
                         <label for="kMissionsStoryReturnToLosSantos"><a href="#kMissionsStoryReturnToLosSantosChecklist">Return to Los Santos</a></label>
                     </li>
                 </ul>
@@ -351,27 +627,27 @@
                 <a id="kMissionsAssetChecklist">Asset Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetCourier" name="kMissionsAssetCourier" value="MissionsAssetCourier">
+                        <input type="checkbox" id="kMissionsAssetCourier" name="kMissionsAssetCourier" value="MissionsAssetCourier" onchange="SaveAssetMissionsCourierComplete()">
                         <label for="kMissionsAssetCourier"><a href="#MissionsAssetCourier">Courier</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetValet" name="kMissionsAssetValet" value="MissionsAssetValet">
+                        <input type="checkbox" id="kMissionsAssetValet" name="kMissionsAssetValet" value="MissionsAssetValet" onchange="SaveAssetMissionsValetComplete()">
                         <label for="kMissionsAssetValet"><a href="#MissionsAssetValet">Valet</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetTrucking" name="kMissionsAssetTrucking" value="MissionsAssetTrucking">
+                        <input type="checkbox" id="kMissionsAssetTrucking" name="kMissionsAssetTrucking" value="MissionsAssetTrucking" onchange="SaveAssetMissionsTruckingComplete()">
                         <label for="kMissionsAssetTrucking"><a href="#MissionsAssetTrucking">Trucking</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetQuarry" name="kMissionsAssetQuarry" value="MissionsAssetQuarry">
+                        <input type="checkbox" id="kMissionsAssetQuarry" name="kMissionsAssetQuarry" value="MissionsAssetQuarry" onchange="SaveAssetMissionsQuarryComplete()">
                         <label for="kMissionsAssetQuarry"><a href="#MissionsAssetQuarry">Quarry</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetZeroRC" name="kMissionsAssetZeroRC" value="MissionsAssetZeroRC">
+                        <input type="checkbox" id="kMissionsAssetZeroRC" name="kMissionsAssetZeroRC" value="MissionsAssetZeroRC" onchange="SaveAssetMissionsZeroRCComplete()">
                         <label for="kMissionsAssetZeroRC"><a href="#MissionsAssetZeroRC">Zero RC</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsAssetWangCars" name="kMissionsAssetWangCars" value="MissionsAssetWangCars">
+                        <input type="checkbox" id="kMissionsAssetWangCars" name="kMissionsAssetWangCars" value="MissionsAssetWangCars" onchange="SaveAssetMissionsWangCarsComplete()">
                         <label for="kMissionsAssetWangCars"><a href="#MissionsAssetWangCars">Wang Cars</a></label>
                     </li>
                 </ul>
@@ -382,27 +658,27 @@
                 <a id="kMissionsVehicleChecklist">Vehicle Missions</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleParamedic" name="kMissionsVehicleParamedic" value="MissionsVehicleParamedic">
+                        <input type="checkbox" id="kMissionsVehicleParamedic" name="kMissionsVehicleParamedic" value="MissionsVehicleParamedic" onchange="SaveVehicleMissionsParamedicComplete()">
                         <label for="kMissionsVehicleParamedic"><a href="#MissionsVehicleParamedic">Paramedic</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleVigilante" name="kMissionsVehicleVigilante" value="MissionsVehicleVigilante">
+                        <input type="checkbox" id="kMissionsVehicleVigilante" name="kMissionsVehicleVigilante" value="MissionsVehicleVigilante" onchange="SaveVehicleMissionsVigilanteComplete()">
                         <label for="kMissionsVehicleVigilante"><a href="#MissionsVehicleVigilante">Vigilante</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleFirefighter" name="kMissionsVehicleFirefighter" value="MissionsVehicleFirefighter">
+                        <input type="checkbox" id="kMissionsVehicleFirefighter" name="kMissionsVehicleFirefighter" value="MissionsVehicleFirefighter" onchange="SaveVehicleMissionsFirefighterComplete()">
                         <label for="kMissionsVehicleFirefighter"><a href="#MissionsVehicleFirefighter">Firefighter</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleTaxi" name="kMissionsVehicleTaxi" value="MissionsVehicleTaxi">
+                        <input type="checkbox" id="kMissionsVehicleTaxi" name="kMissionsVehicleTaxi" value="MissionsVehicleTaxi" onchange="SaveVehicleMissionsTaxiComplete()">
                         <label for="kMissionsVehicleTaxi"><a href="#MissionsVehicleTaxi">Taxi</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehiclePimping" name="kMissionsVehiclePimping" value="MissionsVehiclePimping">
+                        <input type="checkbox" id="kMissionsVehiclePimping" name="kMissionsVehiclePimping" value="MissionsVehiclePimping" onchange="SaveVehicleMissionsPimpingComplete()">
                         <label for="kMissionsVehiclePimping"><a href="#MissionsVehiclePimping">Pimping</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kMissionsVehicleTrain" name="kMissionsVehicleTrain" value="MissionsVehicleTrain">
+                        <input type="checkbox" id="kMissionsVehicleTrain" name="kMissionsVehicleTrain" value="MissionsVehicleTrain" onchange="SaveVehicleMissionsTrainComplete()">
                         <label for="kMissionsVehicleTrain"><a href="#MissionsVehicleTrain">Freight Train</a></label>
                     </li>
                 </ul>
@@ -413,15 +689,15 @@
                 <a id="kChallengesVehicleChecklist">Vehicle Challenges</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesVehicleBMX" name="kChallengesVehicleBMX" value="kChallengesVehicleBMX">
+                        <input type="checkbox" id="kChallengesVehicleBMX" name="kChallengesVehicleBMX" value="kChallengesVehicleBMX" onchange="SaveVehicleChallengesBMXComplete()">
                         <label for="kChallengesVehicleBMX"><a href="#kChallengesVehicleBMXChecklist">BMX Challenge</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesVehicleNRG500" name="kChallengesVehicleNRG500" value="kChallengesVehicleNRG500">
+                        <input type="checkbox" id="kChallengesVehicleNRG500" name="kChallengesVehicleNRG500" value="kChallengesVehicleNRG500" onchange="SaveVehicleChallengesNRG500Complete()">
                         <label for="kChallengesVehicleNRG500"><a href="#kChallengesVehicleNRG500Checklist">NRG-500 Challenge</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesVehicleChilliad" name="kChallengesVehicleChilliad" value="kChallengesVehicleChilliad">
+                        <input type="checkbox" id="kChallengesVehicleChilliad" name="kChallengesVehicleChilliad" value="kChallengesVehicleChilliad" onchange="SaveVehicleChallengesChilliadComplete()">
                         <label for="kChallengesVehicleChilliad"><a href="#kChallengesVehicleChilliadChecklist">The Chilliad Challenge</a></label>
                     </li>
                 </ul>
@@ -432,15 +708,15 @@
                 <a id="kCollectiblesVehicleChecklist">Vehicle Imports/Exports</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesVehicleList1" name="kCollectiblesVehicleList1" value="kCollectiblesVehicleList1">
+                        <input type="checkbox" id="kCollectiblesVehicleList1" name="kCollectiblesVehicleList1" value="kCollectiblesVehicleList1" onchange="SaveVehicleCollectiblesList1Complete()">
                         <label for="kCollectiblesVehicleList1"><a href="#kCollectiblesVehicleList1Checklist">Vehicle List 1</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesVehicleList2" name="kCollectiblesVehicleList2" value="kCollectiblesVehicleList2">
+                        <input type="checkbox" id="kCollectiblesVehicleList2" name="kCollectiblesVehicleList2" value="kCollectiblesVehicleList2" onchange="SaveVehicleCollectiblesList2Complete()">
                         <label for="kCollectiblesVehicleList2"><a href="#kCollectiblesVehicleList2Checklist">Vehicle List 2</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kCollectiblesVehicleList3" name="kCollectiblesVehicleList3" value="kCollectiblesVehicleList3">
+                        <input type="checkbox" id="kCollectiblesVehicleList3" name="kCollectiblesVehicleList3" value="kCollectiblesVehicleList3" onchange="SaveVehicleCollectiblesList3Complete()">
                         <label for="kCollectiblesVehicleList3"><a href="#kCollectiblesVehicleList3Checklist">Vehicle List 3</a></label>
                     </li>
                 </ul>
