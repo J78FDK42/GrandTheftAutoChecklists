@@ -66,6 +66,7 @@
             UpdateVehicleMissionsVigilanteChecklist();
             UpdateVehicleMissionsFirefighterChecklist();
             UpdateVehicleMissionsParamedicChecklist();
+            UpdateVehicleMissionsTaxiChecklist();
             // Vehicle Imports/Exports
             UpdateVehicleCollectiblesEmergencyVehicleCraneChecklist();
             UpdateVehicleCollectiblesPortlandGarageChecklist();
@@ -950,6 +951,80 @@
 
             kCheckbox.checked = szChecked === "true";
         }
+        // -------------------------- Taxi Missions -------------------------- //
+        function UpdateVehicleMissionsTaxiChecklist() {
+            UpdateVehicleMissionsTaxiFares10Complete();
+            UpdateVehicleMissionsTaxiFares20Complete();
+            UpdateVehicleMissionsTaxiFares30Complete();
+            UpdateVehicleMissionsTaxiFares40Complete();
+            UpdateVehicleMissionsTaxiFares50Complete();
+            UpdateVehicleMissionsTaxiFares60Complete();
+            UpdateVehicleMissionsTaxiFares70Complete();
+            UpdateVehicleMissionsTaxiFares80Complete();
+            UpdateVehicleMissionsTaxiFares90Complete();
+            UpdateVehicleMissionsTaxiFares100Complete();
+        }
+        function UpdateVehicleMissionsTaxiFares10Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares10");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares10");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares20Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares20");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares20");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares30Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares30");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares30");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares40Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares40");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares40");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares50Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares50");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares50");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares60Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares60");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares60");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares70Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares70");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares70");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares80Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares80");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares80");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares90Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares90");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares90");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateVehicleMissionsTaxiFares100Complete() {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares100");
+            var szChecked = localStorage.getItem("MissionsVehicleTaxiFares100");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+
         // -------------------------- Vehicle Import/Export -------------------------- //
 
         // -------------------------- Emergency Vehicle Crane -------------------------- //
@@ -2125,6 +2200,49 @@
             var kCheckbox = document.getElementById("kMissionsVehicleParamedicLevel12");
             localStorage.setItem("MissionsVehicleParamedicLevel12", kCheckbox.checked ? "true" : "false");
         }
+        // -------------------------- Taxi Missions -------------------------- //
+        function SaveVehicleMissionsTaxiFares10Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares10");
+            localStorage.setItem("MissionsVehicleTaxiFares10", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares20Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares20");
+            localStorage.setItem("MissionsVehicleTaxiFares20", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares30Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares30");
+            localStorage.setItem("MissionsVehicleTaxiFares30", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares40Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares40");
+            localStorage.setItem("MissionsVehicleTaxiFares40", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares50Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares50");
+            localStorage.setItem("MissionsVehicleTaxiFares50", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares60Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares60");
+            localStorage.setItem("MissionsVehicleTaxiFares60", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares70Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares70");
+            localStorage.setItem("MissionsVehicleTaxiFares70", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares80Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares80");
+            localStorage.setItem("MissionsVehicleTaxiFares80", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares90Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares90");
+            localStorage.setItem("MissionsVehicleTaxiFares90", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveVehicleMissionsTaxiFares100Complete () {
+            var kCheckbox = document.getElementById("kMissionsVehicleTaxiFares100");
+            localStorage.setItem("MissionsVehicleTaxiFares100", kCheckbox.checked ? "true" : "false");
+        }
+
+
         // -------------------------- Vehicle Import/Export -------------------------- //
 
         // -------------------------- Emergency Vehicle Crane -------------------------- //
@@ -3167,48 +3285,48 @@
     <div>
         <h4 class="MissionReward">Reward</h4>
         <span>100 Fares Completed - Unlocks Borgnine Cab in Harwood</span><br />
-        <span>$2,000 Bonus x Each Multiple of 5 Passengers Dropped Off Harwood</span>
+        <span>$2,000 Bonus x Each Multiple of 5 Passengers Dropped Off</span>
     </div>
     <ul>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">10 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares10" name="kMissionsVehicleTaxiFares10" value="kMissionsVehicleTaxiFares10" onchange="SaveVehicleMissionsTaxiFares10Complete()">
+            <label for="kMissionsVehicleTaxiFares10">10 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">20 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares20" name="kMissionsVehicleTaxiFares20" value="kMissionsVehicleTaxiFares20" onchange="SaveVehicleMissionsTaxiFares20Complete()">
+            <label for="kMissionsVehicleTaxiFares20">20 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">30 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares30" name="kMissionsVehicleTaxiFares30" value="kMissionsVehicleTaxiFares30" onchange="SaveVehicleMissionsTaxiFares30Complete()">
+            <label for="kMissionsVehicleTaxiFares30">30 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">40 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares40" name="kMissionsVehicleTaxiFares40" value="kMissionsVehicleTaxiFares40" onchange="SaveVehicleMissionsTaxiFares40Complete()">
+            <label for="kMissionsVehicleTaxiFares40">40 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">50 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares50" name="kMissionsVehicleTaxiFares50" value="kMissionsVehicleTaxiFares50" onchange="SaveVehicleMissionsTaxiFares50Complete()">
+            <label for="kMissionsVehicleTaxiFares50">50 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">60 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares60" name="kMissionsVehicleTaxiFares60" value="kMissionsVehicleTaxiFares60" onchange="SaveVehicleMissionsTaxiFares60Complete()">
+            <label for="kMissionsVehicleTaxiFares60">60 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">70 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares70" name="kMissionsVehicleTaxiFares70" value="kMissionsVehicleTaxiFares70" onchange="SaveVehicleMissionsTaxiFares70Complete()">
+            <label for="kMissionsVehicleTaxiFares70">70 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">80 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares80" name="kMissionsVehicleTaxiFares80" value="kMissionsVehicleTaxiFares80" onchange="SaveVehicleMissionsTaxiFares80Complete()">
+            <label for="kMissionsVehicleTaxiFares80">80 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">90 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares90" name="kMissionsVehicleTaxiFares90" value="kMissionsVehicleTaxiFares90" onchange="SaveVehicleMissionsTaxiFares90Complete()">
+            <label for="kMissionsVehicleTaxiFares90">90 Total Fares</label>
         </li>
         <li class="CheckListItem">
-            <input type="checkbox" id="kMissionsVehicleTaxiBonus5" name="kMissionsVehicleTaxiBonus5" value="kMissionsVehicleTaxiBonus5">
-            <label for="kMissionsVehicleTaxiBonus5">100 Total Fares</label>
+            <input type="checkbox" id="kMissionsVehicleTaxiFares100" name="kMissionsVehicleTaxiFares100" value="kMissionsVehicleTaxiFares100" onchange="SaveVehicleMissionsTaxiFares100Complete()">
+            <label for="kMissionsVehicleTaxiFares100">100 Total Fares</label>
         </li>
     </ul>
     <a href="#ChecklistHome">Back to Top</a>
