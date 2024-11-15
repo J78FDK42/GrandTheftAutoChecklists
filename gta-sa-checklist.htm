@@ -211,11 +211,23 @@
             UpdateVehicleCollectiblesList2Complete();
             UpdateVehicleCollectiblesList3Complete();
         }
-        function UpdateDetailedWeaponChallengesChecklist () {
+        function UpdateDetailedWeaponChallengesChecklist() {
+            UpdateWeaponChallengesStage1Complete();
+            UpdateWeaponChallengesStage2Complete();
+            UpdateWeaponChallengesStage3Complete();
+            UpdateWeaponChallengesStage4Complete();
         }
-        function UpdateDetailedSchoolsChecklist () {
+        function UpdateDetailedSchoolsChecklist() {
+            UpdateSchoolsDrivingComplete();
+            UpdateSchoolsBoatComplete();
+            UpdateSchoolsBikeComplete();
+            UpdateSchoolsFlightComplete();
         }
         function UpdateDetailedStadiumEventsChecklist () {
+            UpdateStadiumEvents8TrackComplete();
+            UpdateStadiumEventsBloodBowlComplete();
+            UpdateStadiumEventsDirtTrackComplete();
+            UpdateStadiumEventsKickstartComplete();
         }
         function UpdateDetailedRaceTournamentsChecklist () {
         }
@@ -358,6 +370,81 @@
         function UpdateVehicleCollectiblesList3Complete () {
             var kCheckbox = document.getElementById("kCollectiblesVehicleList3");
             var szChecked = localStorage.getItem("kCollectiblesVehicleList3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Weapon Challenges -------------------------- //
+        function UpdateWeaponChallengesStage1Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage1");
+            var szChecked = localStorage.getItem("kChallengesWeaponStage1");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateWeaponChallengesStage2Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage2");
+            var szChecked = localStorage.getItem("kChallengesWeaponStage2");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateWeaponChallengesStage3Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage3");
+            var szChecked = localStorage.getItem("kChallengesWeaponStage3");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateWeaponChallengesStage4Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage4");
+            var szChecked = localStorage.getItem("kChallengesWeaponStage4");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Schools -------------------------- //
+        function UpdateSchoolsDrivingComplete () {
+            var kCheckbox = document.getElementById("kSchoolsDriving");
+            var szChecked = localStorage.getItem("kSchoolsDriving");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateSchoolsBoatComplete () {
+            var kCheckbox = document.getElementById("kSchoolsBoat");
+            var szChecked = localStorage.getItem("kSchoolsBoat");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateSchoolsBikeComplete () {
+            var kCheckbox = document.getElementById("kSchoolsBike");
+            var szChecked = localStorage.getItem("kSchoolsBike");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateSchoolsFlightComplete () {
+            var kCheckbox = document.getElementById("kSchoolsFlight");
+            var szChecked = localStorage.getItem("kSchoolsFlight");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        // -------------------------- Detailed Stadium Events -------------------------- //
+        function UpdateStadiumEvents8TrackComplete () {
+            var kCheckbox = document.getElementById("kStadiumEvents8Track");
+            var szChecked = localStorage.getItem("kStadiumEvents8Track");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStadiumEventsBloodBowlComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsBloodBowl");
+            var szChecked = localStorage.getItem("kStadiumEventsBloodBowl");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStadiumEventsDirtTrackComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsDirtTrack");
+            var szChecked = localStorage.getItem("kStadiumEventsDirtTrack");
+
+            kCheckbox.checked = szChecked === "true";
+        }
+        function UpdateStadiumEventsKickstartComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsKickstart");
+            var szChecked = localStorage.getItem("kStadiumEventsKickstart");
 
             kCheckbox.checked = szChecked === "true";
         }
@@ -510,6 +597,57 @@
         function SaveVehicleCollectiblesList3Complete () {
             var kCheckbox = document.getElementById("kCollectiblesVehicleList3");
             localStorage.setItem("kCollectiblesVehicleList3", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Weapon Challenges -------------------------- //
+        function SaveWeaponChallengesStage1Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage1");
+            localStorage.setItem("kChallengesWeaponStage1", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveWeaponChallengesStage2Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage2");
+            localStorage.setItem("kChallengesWeaponStage2", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveWeaponChallengesStage3Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage3");
+            localStorage.setItem("kChallengesWeaponStage3", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveWeaponChallengesStage4Complete () {
+            var kCheckbox = document.getElementById("kChallengesWeaponStage4");
+            localStorage.setItem("kChallengesWeaponStage4", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Schools -------------------------- //
+        function SaveSchoolsDrivingComplete () {
+            var kCheckbox = document.getElementById("kSchoolsDriving");
+            localStorage.setItem("kSchoolsDriving", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveSchoolsBoatComplete () {
+            var kCheckbox = document.getElementById("kSchoolsBoat");
+            localStorage.setItem("kSchoolsBoat", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveSchoolsBikeComplete () {
+            var kCheckbox = document.getElementById("kSchoolsBike");
+            localStorage.setItem("kSchoolsBike", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveSchoolsFlightComplete () {
+            var kCheckbox = document.getElementById("kSchoolsFlight");
+            localStorage.setItem("kSchoolsFlight", kCheckbox.checked ? "true" : "false");
+        }
+        // -------------------------- Detailed Stadium Events -------------------------- //
+        function SaveStadiumEvents8TrackComplete () {
+            var kCheckbox = document.getElementById("kStadiumEvents8Track");
+            localStorage.setItem("kStadiumEvents8Track", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStadiumEventsBloodBowlComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsBloodBowl");
+            localStorage.setItem("kStadiumEventsBloodBowl", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStadiumEventsDirtTrackComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsDirtTrack");
+            localStorage.setItem("kStadiumEventsDirtTrack", kCheckbox.checked ? "true" : "false");
+        }
+        function SaveStadiumEventsKickstartComplete () {
+            var kCheckbox = document.getElementById("kStadiumEventsKickstart");
+            localStorage.setItem("kStadiumEventsKickstart", kCheckbox.checked ? "true" : "false");
         }
 
         // -------------------------- Detailed Missions -------------------------- //
@@ -727,19 +865,19 @@
                 <a id="kChallengesWeaponChecklist">Weapon Challenges</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesWeaponStage1" name="kChallengesWeaponStage1" value="kChallengesWeaponStage1">
+                        <input type="checkbox" id="kChallengesWeaponStage1" name="kChallengesWeaponStage1" value="kChallengesWeaponStage1" onchange="SaveWeaponChallengesStage1Complete()">
                         <label for="kChallengesWeaponStage1"><a href="#kChallengesWeaponStage1Checklist">Shooting Range - Stage 1 (Pistol)</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesWeaponStage2" name="kChallengesWeaponStage2" value="kChallengesWeaponStage2">
+                        <input type="checkbox" id="kChallengesWeaponStage2" name="kChallengesWeaponStage2" value="kChallengesWeaponStage2" onchange="SaveWeaponChallengesStage2Complete()">
                         <label for="kChallengesWeaponStage2"><a href="#kChallengesWeaponStage2Checklist">Shooting Range - Stage 2 (SMG)</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesWeaponStage3" name="kChallengesWeaponStage3" value="kChallengesWeaponStage3">
+                        <input type="checkbox" id="kChallengesWeaponStage3" name="kChallengesWeaponStage3" value="kChallengesWeaponStage3" onchange="SaveWeaponChallengesStage3Complete()">
                         <label for="kChallengesWeaponStage3"><a href="#kChallengesWeaponStage3Checklist">Shooting Range - Stage 3 (Shotgun)</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kChallengesWeaponStage4" name="kChallengesWeaponStage4" value="kChallengesWeaponStage4">
+                        <input type="checkbox" id="kChallengesWeaponStage4" name="kChallengesWeaponStage4" value="kChallengesWeaponStage4" onchange="SaveWeaponChallengesStage4Complete()">
                         <label for="kChallengesWeaponStage4"><a href="#kChallengesWeaponStage4Checklist">Shooting Range - Stage 4 (AK-47)</a></label>
                     </li>
                 </ul>
@@ -750,19 +888,19 @@
                 <a id="kSchoolsChecklist">Schools</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kSchoolsDriving" name="kSchoolsDriving" value="kSchoolsDriving">
+                        <input type="checkbox" id="kSchoolsDriving" name="kSchoolsDriving" value="kSchoolsDriving" onchange="SaveSchoolsDrivingComplete()">
                         <label for="kSchoolsDriving"><a href="#kSchoolsDrivingChecklist">Driving School</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kSchoolsBoat" name="kSchoolsBoat" value="kSchoolsBoat">
+                        <input type="checkbox" id="kSchoolsBoat" name="kSchoolsBoat" value="kSchoolsBoat" onchange="SaveSchoolsBoatComplete()">
                         <label for="kSchoolsBoat"><a href="#kSchoolsBoatChecklist">Boat School</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kSchoolsBike" name="kSchoolsBike" value="kSchoolsBike">
+                        <input type="checkbox" id="kSchoolsBike" name="kSchoolsBike" value="kSchoolsBike" onchange="SaveSchoolsBikeComplete()">
                         <label for="kSchoolsBike"><a href="#kSchoolsBikeChecklist">Bike School</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kSchoolsFlight" name="kSchoolsFlight" value="kSchoolsFlight">
+                        <input type="checkbox" id="kSchoolsFlight" name="kSchoolsFlight" value="kSchoolsFlight" onchange="SaveSchoolsFlightComplete()">
                         <label for="kSchoolsFlight"><a href="#kSchoolsFlightChecklist">Flight School</a></label>
                     </li>
                 </ul>
@@ -773,19 +911,19 @@
                 <a id="kStadiumEventsChecklist">Stadium Events</a>
                 <ul>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kStadiumEvents8Track" name="kStadiumEvents8Track" value="kStadiumEvents8Track">
+                        <input type="checkbox" id="kStadiumEvents8Track" name="kStadiumEvents8Track" value="kStadiumEvents8Track" onchange="SaveStadiumEvents8TrackComplete()">
                         <label for="kStadiumEvents8Track"><a href="#kStadiumEvents8TrackChecklist">8-Track</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kStadiumEventsBloodBowl" name="kStadiumEventsBloodBowl" value="kStadiumEventsBloodBowl">
+                        <input type="checkbox" id="kStadiumEventsBloodBowl" name="kStadiumEventsBloodBowl" value="kStadiumEventsBloodBowl" onchange="SaveStadiumEventsBloodBowlComplete()">
                         <label for="kStadiumEventsBloodBowl"><a href="#kStadiumEventsBloodBowlChecklist">Blood Bowl</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kStadiumEventsDirtTrack" name="kStadiumEventsDirtTrack" value="kStadiumEventsDirtTrack">
+                        <input type="checkbox" id="kStadiumEventsDirtTrack" name="kStadiumEventsDirtTrack" value="kStadiumEventsDirtTrack" onchange="SaveStadiumEventsDirtTrackComplete()">
                         <label for="kStadiumEventsDirtTrack"><a href="#kStadiumEventsDirtTrackChecklist">Dirt Track</a></label>
                     </li>
                     <li class="CheckListItem">
-                        <input type="checkbox" id="kStadiumEventsKickstart" name="kStadiumEventsKickstart" value="kStadiumEventsKickstart">
+                        <input type="checkbox" id="kStadiumEventsKickstart" name="kStadiumEventsKickstart" value="kStadiumEventsKickstart" onchange="SaveStadiumEventsKickstartComplete()">
                         <label for="kStadiumEventsKickstart"><a href="#kStadiumEventsKickstartChecklist">Kickstart</a></label>
                     </li>
                 </ul>
